@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — Dr. Santiago Muñoz Palomeque · Cirujano en Quito</title>
+  <meta name="description" content="Cirugía de vesícula, hernias, apéndice, reflujo, urgencias 24/7 y más. Técnicas laparoscópicas mínimamente invasivas. Quito, Ecuador.">
+  <meta property="og:title" content="Servicios de Cirugía — Dr. Santiago Muñoz Palomeque · Quito">
+  <meta property="og:description" content="Cirugía de vesícula, hernias, apéndice, reflujo y más. Técnica laparoscópica mínimamente invasiva. Urgencias quirúrgicas 24/7. Quito, Ecuador.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dr-santiago-munoz-palomeque.com/servicios.html">
+  <meta property="og:image" content="https://dr-santiago-munoz-palomeque.com/img/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#0D2240;--navy-mid:#162F56;--navy-light:#1E3F72;
+      --gold:#B8862A;--gold-warm:#CFA045;--gold-pale:#F3E8CC;
+      --ivory:#FAF8F4;--ivory-dark:#F0EDE6;--stone:#E4E0D8;
+      --text:#1A1A2A;--text-mid:#4A4859;--text-light:#8A8898;
+      --white:#FFFFFF;--green-wa:#22C55E;--green-wa-h:#16A34A;
+      --r-sm:6px;--r-md:14px;--r-lg:24px;--r-xl:36px;
+      --shadow-sm:0 2px 8px rgba(13,34,64,.07);
+      --shadow-md:0 8px 32px rgba(13,34,64,.11);
+      --shadow-lg:0 20px 64px rgba(13,34,64,.16);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--ivory);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:300;line-height:1.08;letter-spacing:-0.02em}
+    h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;line-height:1.2}
+    h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;line-height:1.3}
+    h4{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:600;line-height:1.4}
+    p{line-height:1.78;color:var(--text-mid);font-size:1.0125rem;font-weight:300}
+    .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:inline-block}
+    .eyebrow--gold{color:var(--gold-warm)}
+    .eyebrow--navy{color:var(--navy)}
+    .eyebrow--stone{color:var(--text-light)}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+    .section{padding:96px 0}
+    .section--sm{padding:64px 0}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:var(--r-sm);font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;border:1.5px solid transparent;transition:all .22s cubic-bezier(.4,0,.2,1);white-space:nowrap;line-height:1}
+    .btn--gold{background:var(--gold);color:var(--white);border-color:var(--gold)}
+    .btn--gold:hover{background:var(--gold-warm);transform:translateY(-2px);box-shadow:0 8px 32px rgba(184,134,42,.25)}
+    .btn--outline-navy{background:transparent;color:var(--navy);border-color:var(--navy)}
+    .btn--outline-navy:hover{background:var(--navy);color:var(--white)}
+    .btn--outline-white{background:transparent;color:var(--white);border-color:rgba(255,255,255,.35)}
+    .btn--outline-white:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.7)}
+    .btn--wa{background:var(--green-wa);color:var(--white);border-color:var(--green-wa)}
+    .btn--wa:hover{background:var(--green-wa-h);transform:translateY(-2px);box-shadow:0 8px 28px rgba(34,197,94,.3)}
+    .btn--lg{padding:18px 38px;font-size:.9375rem}
+    .btn--sm{padding:11px 22px;font-size:.8125rem}
+    .wa-icon{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:900;transition:background .35s ease,box-shadow .35s ease}
+    .nav.scrolled{background:rgba(13,34,64,.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.06),var(--shadow-md)}
+    .nav__bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+    .nav__logo{display:flex;flex-direction:column;gap:2px}
+    .nav__logo-name{font-family:'Playfair Display',serif;font-size:1.0625rem;font-weight:700;color:var(--white);letter-spacing:.01em;line-height:1.2}
+    .nav__logo-role{font-size:.675rem;font-weight:500;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
+    .nav__links{display:flex;align-items:center;gap:36px}
+    .nav__link{font-size:.875rem;font-weight:400;color:rgba(255,255,255,.75);transition:color .18s;position:relative}
+    .nav__link::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold-warm);transition:width .22s ease}
+    .nav__link:hover{color:var(--white)}
+    .nav__link:hover::after{width:100%}
+    .nav__link.active{color:var(--white)}
+    .nav__link.active::after{width:100%}
+    .nav__cta{padding:10px 22px;font-size:.8375rem}
+    .nav__hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+    .nav__hamburger span{display:block;width:26px;height:1.5px;background:var(--white);border-radius:2px;transition:all .28s}
+    .nav__drawer{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(13,34,64,.98);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 32px 32px;border-top:1px solid rgba(255,255,255,.07)}
+    .nav__drawer.open{display:flex;flex-direction:column;gap:22px}
+    .nav__drawer .nav__link{font-size:1.0625rem;color:rgba(255,255,255,.85)}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:148px 0 88px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,134,42,.07) 0%,transparent 60%);pointer-events:none}
+    .page-hero__inner{max-width:760px}
+    .page-hero__eyebrow{margin-bottom:20px}
+    .page-hero__title{color:var(--white);margin-bottom:22px}
+    .page-hero__title em{font-style:italic;color:var(--gold-warm)}
+    .page-hero__sub{font-size:1.1rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.75;max-width:600px;margin-bottom:36px}
+    .page-hero__ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+    /* SERVICES */
+    .services-nav{background:var(--white);border-bottom:1px solid var(--stone);position:sticky;top:76px;z-index:100}
+    .services-nav__inner{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+    .services-nav__inner::-webkit-scrollbar{display:none}
+    .services-nav__link{padding:18px 24px;font-size:.875rem;font-weight:500;color:var(--text-mid);white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;flex-shrink:0}
+    .services-nav__link:hover{color:var(--navy);border-bottom-color:var(--gold)}
+    .services-nav__link.active{color:var(--navy);border-bottom-color:var(--gold);font-weight:600}
+
+    .service-section{padding:88px 0;scroll-margin-top:140px}
+    .service-section:nth-child(even){background:var(--ivory-dark)}
+    .service-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+    .service-grid--reverse .service-media{order:-1}
+    .service-label{margin-bottom:14px}
+    .service-title{color:var(--navy);margin-bottom:18px}
+    .service-body{margin-bottom:22px}
+    .service-benefits{display:flex;flex-direction:column;gap:12px;margin:28px 0}
+    .service-benefit{display:flex;align-items:flex-start;gap:12px}
+    .service-benefit-dot{width:20px;height:20px;border-radius:50%;background:var(--gold-pale);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:2px}
+    .service-benefit-text{font-size:.9375rem;font-weight:300;color:var(--text-mid);line-height:1.65}
+    .service-benefit-text strong{color:var(--text);font-weight:600}
+    .service-cta{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+
+    /* Photo placeholder */
+    .photo-box{border-radius:var(--r-xl);overflow:hidden;position:relative;background:var(--navy-mid)}
+    .photo-box__placeholder{aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;background:linear-gradient(160deg,#1A3560 0%,#0F2347 100%)}
+    .photo-box__icon{font-size:3rem;line-height:1}
+    .photo-box__brief{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:20px 24px;width:100%;max-width:300px;text-align:left}
+    .photo-box__brief-tag{font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-warm);margin-bottom:8px}
+    .photo-box__brief-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--white);font-weight:700;margin-bottom:4px;line-height:1.3}
+    .photo-box__brief-desc{font-size:.8125rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.55}
+
+    /* Urgency */
+    .urgency{background:var(--navy);padding:72px 0}
+    .urgency__inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+    .urgency__icon{font-size:3.5rem;flex-shrink:0}
+    .urgency__content{flex:1;min-width:300px}
+    .urgency__title{font-family:'Playfair Display',serif;font-size:1.75rem;color:var(--white);margin-bottom:12px}
+    .urgency__text{font-size:1rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.7;max-width:580px}
+    .urgency__ctas{display:flex;gap:14px;flex-wrap:wrap;flex-shrink:0}
+
+    /* Nutrition callout */
+    .nutrition-note{background:var(--gold-pale);border-radius:var(--r-lg);padding:32px 36px;border-left:4px solid var(--gold);margin-top:28px}
+    .nutrition-note p{color:var(--text);font-size:.9375rem}
+    .nutrition-note p strong{color:var(--navy);font-weight:600}
+
+    /* FOOTER */
+    .footer{background:#06111F}
+    .footer__main{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:64px;padding:72px 0 56px;border-bottom:1px solid rgba(255,255,255,.07)}
+    .footer__brand-name{font-family:'Playfair Display',serif;font-size:1.1875rem;color:var(--white);margin-bottom:8px}
+    .footer__brand-role{font-size:.8125rem;color:rgba(255,255,255,.4);font-weight:300;margin-bottom:22px;letter-spacing:.04em}
+    .footer__brand-desc{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:28px}
+    .footer__col-title{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:22px}
+    .footer__links{display:flex;flex-direction:column;gap:12px}
+    .footer__link{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);transition:color .18s}
+    .footer__link:hover{color:var(--white)}
+    .footer__contact-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+    .footer__contact-icon{font-size:1rem;margin-top:1px;flex-shrink:0}
+    .footer__contact-text{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.6}
+    .footer__bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;flex-wrap:wrap}
+    .footer__copy{font-size:.8125rem;font-weight:300;color:rgba(255,255,255,.3)}
+
+    /* WA FLOAT */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:800;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .wa-float__tooltip{background:var(--white);border-radius:10px;padding:10px 18px;box-shadow:var(--shadow-lg);font-size:.875rem;font-weight:500;color:var(--navy);white-space:nowrap;opacity:0;transform:translateX(10px);transition:all .25s ease;pointer-events:none}
+    .wa-float:hover .wa-float__tooltip{opacity:1;transform:translateX(0)}
+    .wa-float__btn{width:62px;height:62px;border-radius:50%;background:var(--green-wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(34,197,94,.35);transition:all .25s ease}
+    .wa-float__btn:hover{transform:scale(1.1);box-shadow:0 12px 40px rgba(34,197,94,.5)}
+    .wa-float__btn svg{width:30px;height:30px;fill:white}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-delay-1{transition-delay:.12s}
+    .reveal-delay-2{transition-delay:.24s}
+
+    @media(max-width:900px){
+      .service-grid{grid-template-columns:1fr;gap:40px}
+      .service-grid--reverse .service-media{order:0}
+      .footer__main{grid-template-columns:1fr 1fr;gap:40px}
+    }
+    @media(max-width:768px){
+      .wrap{padding:0 20px}
+      .section{padding:64px 0}
+      .service-section{padding:64px 0}
+      .nav__links{display:none}
+      .nav__hamburger{display:flex}
+      .urgency__inner{flex-direction:column;text-align:center}
+      .urgency__ctas{justify-content:center}
+      .footer__main{grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
+      .footer__bottom{flex-direction:column;text-align:center}
+      .page-hero__ctas{flex-direction:column}
+      .page-hero__ctas .btn{align-self:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav__bar">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Dr. Santiago Muñoz P.</span>
+        <span class="nav__logo-role">Cirujano General · Quito</span>
+      </a>
+      <div class="nav__links">
+        <a href="servicios.html" class="nav__link active">Servicios</a>
+        <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
+        <a href="investigacion.html" class="nav__link">Investigación</a>
+        <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa nav__cta">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="servicios.html" class="nav__link active">Servicios</a>
+    <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
+    <a href="investigacion.html" class="nav__link">Investigación</a>
+    <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+    <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa" style="align-self:flex-start;">Escribir por WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero__inner">
+      <div class="page-hero__eyebrow"><span class="eyebrow eyebrow--gold">Áreas de atención</span></div>
+      <h1 class="page-hero__title">Cirugía con <em>precisión</em>,<br>recuperación en días.</h1>
+      <p class="page-hero__sub">No todos los pacientes necesitan cirugía. Mi prioridad es indicarla solo cuando realmente es la mejor opción para tu caso.</p>
+      <div class="page-hero__ctas">
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20consultar%20sobre%20un%20servicio." target="_blank" class="btn btn--wa btn--lg">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar por WhatsApp
+        </a>
+        <a href="#vesicula" class="btn btn--outline-white btn--lg">Ver todos los servicios ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES NAV -->
+<div class="services-nav">
+  <div class="wrap">
+    <div class="services-nav__inner">
+      <a href="#vesicula" class="services-nav__link">Vesícula</a>
+      <a href="#hernias" class="services-nav__link">Hernias</a>
+      <a href="#apendice" class="services-nav__link">Apéndice</a>
+      <a href="#reflujo" class="services-nav__link">Reflujo</a>
+      <a href="#urgencias" class="services-nav__link">Urgencias 24/7</a>
+      <a href="#nutricion" class="services-nav__link">Nutrición</a>
+      <a href="#menor" class="services-nav__link">Cirugía menor</a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── VESÍCULA ─────────────────────────────────────────── -->
+<section class="service-section" id="vesicula">
+  <div class="wrap">
+    <div class="service-grid reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Vesícula y Vías Biliares</span></div>
+        <h2 class="service-title">Cirugía de vesícula sin cicatrices visibles</h2>
+        <p class="service-body">Los cálculos en la vesícula y la colecistitis (inflamación) son problemas muy frecuentes que generan dolor abdominal intenso, náuseas y digestión difícil. La solución definitiva es quirúrgica — y hoy se puede hacer con incisiones milimétricas.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Laparoscópica</strong> — 3 incisiones pequeñas, no abre el abdomen</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Alta hospitalaria en 24 horas</strong> en la mayoría de casos</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Regreso a actividades</strong> en 5–7 días</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">Disponible como <strong>cirugía programada o de emergencia</strong></span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">Experiencia en casos complejos con <strong>cálculos en vías biliares</strong></span></div>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20tengo%20dudas%20sobre%20cirugía%20de%20vesícula." target="_blank" class="btn btn--gold">Consultar mi caso</a>
+          <a href="agendar-cita.html" class="btn btn--outline-navy">Agendar valoración</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — VESÍCULA
+          Imagen: Procedimiento laparoscópico en quirófano. Ángulo lateral,
+          enfocado en las manos del cirujano con instrumentos y el monitor
+          laparoscópico en el fondo (mostrando interior abdominal). Luz
+          fría de quirófano pero con profundidad de campo baja para suavizar.
+          Alternativa: close-up de laparoscopio sobre fondo azul/verde oscuro.
+          NUNCA: imágenes de sangre o heridas abiertas.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">🫀</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Cirugía laparoscópica en quirófano</div>
+              <div class="photo-box__brief-desc">Manos del cirujano con instrumentos laparoscópicos. Luz de quirófano. Sin sangre visible.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HERNIAS ──────────────────────────────────────────── -->
+<section class="service-section" id="hernias" style="background:var(--ivory-dark)">
+  <div class="wrap">
+    <div class="service-grid service-grid--reverse reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Pared Abdominal</span></div>
+        <h2 class="service-title">Hernias: recupera tu movilidad sin dolor</h2>
+        <p class="service-body">Una hernia es la protrusión de tejido u órgano a través de una debilidad en la pared muscular. Pueden aparecer en la ingle (inguinal), el ombligo (umbilical) o en cicatrices de cirugías previas. Generan incomodidad, dolor y riesgo de complicaciones si no se tratan.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Reparación con malla</strong> — la solución más duradera con mínimas recurrencias</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Técnica laparoscópica</strong> — sin grandes cortes, menos dolor postoperatorio</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Hernias inguinales y umbilicales</strong> — los tipos más frecuentes</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">También <strong>eventraciones</strong> (hernias en cicatrices de cirugías previas)</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Regreso al trabajo</strong> en 7–14 días según el tipo</span></div>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20tengo%20dudas%20sobre%20una%20hernia." target="_blank" class="btn btn--gold">Consultar mi caso</a>
+          <a href="agendar-cita.html" class="btn btn--outline-navy">Agendar valoración</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — HERNIAS
+          Imagen: Doctor en consulta, revisando el abdomen de un paciente o
+          explicando con un diagrama anatómico. Ambiente de consultorio cálido.
+          Alternativa: ilustración médica limpia de la pared abdominal.
+          Tono cálido, profesional, no clínico.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">🩹</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Consulta médica, explicación al paciente</div>
+              <div class="photo-box__brief-desc">Doctor revisando abdomen o mostrando diagrama. Consultorio cálido. Tono empático.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── APÉNDICE ─────────────────────────────────────────── -->
+<section class="service-section" id="apendice">
+  <div class="wrap">
+    <div class="service-grid reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Apendicitis</span></div>
+        <h2 class="service-title">Atención precisa y segura ante una apendicitis</h2>
+        <p class="service-body">La apendicitis es una emergencia quirúrgica frecuente: el apéndice se inflama y, si no se trata a tiempo, puede perforarse con consecuencias graves. El diagnóstico rápido y la cirugía oportuna son clave.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Apendicectomía laparoscópica</strong> — el estándar de oro actual</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Alta en menos de 24 horas</strong> en casos no complicados</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">Disponible como <strong>urgencia quirúrgica</strong> cuando es necesario</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Diagnóstico diferencial claro</strong> — antes de operar, confirmamos el diagnóstico</span></div>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Urgencia%20apendicitis%2C%20necesito%20atención." target="_blank" class="btn btn--gold">Contactar ahora</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — APÉNDICE / URGENCIAS
+          Imagen: Quirófano moderno, equipo listo para laparoscopia.
+          O doctor en triage revisando paciente con urgencia abdominal.
+          Transmitir: rapidez, precisión, seguridad. Luz fría pero limpia.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">⚡</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Quirófano moderno preparado</div>
+              <div class="photo-box__brief-desc">Equipo laparoscópico listo. Transmitir rapidez y precisión. Sin pacientes visibles.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── REFLUJO ──────────────────────────────────────────── -->
+<section class="service-section" id="reflujo" style="background:var(--ivory-dark)">
+  <div class="wrap">
+    <div class="service-grid service-grid--reverse reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Digestivo</span></div>
+        <h2 class="service-title">Adiós definitivo al reflujo y la acidez crónica</h2>
+        <p class="service-body">El reflujo gastroesofágico (ERGE) y la hernia hiatal provocan ardor, regurgitación y malestar persistente que afectan la calidad de vida. Cuando la medicación no es suficiente, la cirugía es la solución definitiva.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Funduplicatura laparoscópica</strong> — cirugía estándar para ERGE con excelentes resultados</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Reparación de hernia hiatal</strong> simultánea cuando es necesario</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">También tratamiento de <strong>divertículos, pólipos y tumores</strong> digestivos benignos</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Evaluación previa</strong> para confirmar que la cirugía es la mejor opción en tu caso</span></div>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20tengo%20reflujo%20crónico%20y%20quisiera%20consultar." target="_blank" class="btn btn--gold">Consultar mi caso</a>
+          <a href="agendar-cita.html" class="btn btn--outline-navy">Agendar valoración</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — REFLUJO / DIGESTIVO
+          Imagen: Paciente con médico en consulta. O doctor revisando
+          resultados de endoscopía en pantalla. Tono empático y tranquilo.
+          Ambiente de consultorio gastroenterológico. Luz cálida.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">🔥</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Médico revisando resultados con paciente</div>
+              <div class="photo-box__brief-desc">Consultorio gastro. Doctor y paciente mirando pantalla juntos. Luz cálida, empático.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── URGENCIAS ────────────────────────────────────────── -->
+<div class="urgency" id="urgencias">
+  <div class="wrap">
+    <div class="urgency__inner reveal">
+      <div class="urgency__icon">🚨</div>
+      <div class="urgency__content">
+        <div class="urgency__title">Urgencias quirúrgicas disponibles 24 / 7</div>
+        <p class="urgency__text">Atención inmediata para obstrucciones intestinales, perforaciones viscerales, sangrados internos, peritonitis y cuadros abdominales agudos que comprometen la vida o generan dolor intenso. No esperes: ante una duda, escríbeme.</p>
+      </div>
+      <div class="urgency__ctas">
+        <a href="https://wa.me/593984966771?text=URGENCIA%20QUIRÚRGICA%2C%20necesito%20atención%20urgente." target="_blank" class="btn btn--wa btn--lg">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Urgencia — Escribir ahora
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── NUTRICIÓN ────────────────────────────────────────── -->
+<section class="service-section" id="nutricion">
+  <div class="wrap">
+    <div class="service-grid reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Pre y Post Cirugía</span></div>
+        <h2 class="service-title">Soporte nutricional para una recuperación más rápida</h2>
+        <p class="service-body">El estado nutricional antes y después de una cirugía tiene un impacto directo en los resultados. Un paciente bien preparado tiene menos complicaciones, cicatriza mejor y regresa antes a su vida normal.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Prehabilitación</strong> — optimización nutricional antes de la cirugía para reducir riesgos</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Seguimiento post-operatorio</strong> — plan nutricional personalizado para la recuperación</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">Especialmente indicado en <strong>cirugías digestivas complejas</strong></span></div>
+        </div>
+        <div class="nutrition-note">
+          <p><strong>Nota importante:</strong> Este soporte nutricional es parte integral del proceso quirúrgico, no un servicio separado. Se integra en el plan de atención de cada paciente según su caso.</p>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20información%20sobre%20preparación%20nutricional%20antes%20de%20cirugía." target="_blank" class="btn btn--gold">Consultar</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — NUTRICIÓN / PRE-OP
+          Imagen: Médico y paciente en consulta pre-operatoria, revisando
+          resultados o plan de tratamiento. Ambiente cálido y tranquilo.
+          Alternativa: mesa de consulta con documentos médicos y fruta fresca
+          en segundo plano (metáfora nutrición). Luz cálida y natural.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">🥗</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Consulta pre-operatoria / nutrición</div>
+              <div class="photo-box__brief-desc">Doctor revisando plan con paciente. Luz cálida. Transmitir preparación y cuidado.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CIRUGÍA MENOR ────────────────────────────────────── -->
+<section class="service-section" id="menor" style="background:var(--ivory-dark)">
+  <div class="wrap">
+    <div class="service-grid service-grid--reverse reveal">
+      <div class="service-content">
+        <div class="service-label"><span class="eyebrow eyebrow--stone">Procedimientos Menores</span></div>
+        <h2 class="service-title">Cirugía menor de tejidos blandos</h2>
+        <p class="service-body">Los procedimientos menores son intervenciones ambulatorias que resuelven problemas localizados en piel o tejidos superficiales. Se realizan bajo anestesia local o sedación, sin hospitalización.</p>
+        <div class="service-benefits">
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Excisión de quistes y lipomas</strong> — extirpación de bultos benignos</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Biopsias de tejidos</strong> — toma de muestra para diagnóstico histológico</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text"><strong>Ambulatorio</strong> — sin hospitalización, regreso a casa el mismo día</span></div>
+          <div class="service-benefit"><div class="service-benefit-dot">✓</div><span class="service-benefit-text">Anestesia <strong>local o sedación</strong> según el procedimiento</span></div>
+        </div>
+        <div class="service-cta">
+          <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20consultar%20sobre%20un%20procedimiento%20menor." target="_blank" class="btn btn--gold">Consultar</a>
+          <a href="agendar-cita.html" class="btn btn--outline-navy">Agendar cita</a>
+        </div>
+      </div>
+      <div class="service-media">
+        <!--
+          BRIEF FOTOGRÁFICO — CIRUGÍA MENOR
+          Imagen: Doctor preparando procedimiento menor, guantes puestos,
+          instrumentos en bandeja. Ambiente de sala de procedimientos limpio.
+          Primer plano de manos con instrumentos pequeños. Luz clínica limpia.
+          Transmitir: precision, limpieza, tranquilidad.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">🏥</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico</div>
+              <div class="photo-box__brief-title">Sala de procedimientos, instrumentos</div>
+              <div class="photo-box__brief-desc">Manos con guantes, instrumentos pequeños. Sala limpia. Transmitir precisión y calma.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__main">
+      <div>
+        <div class="footer__brand-name">Dr. Santiago Muñoz Palomeque</div>
+        <div class="footer__brand-role">Cirujano General y Laparoscópico · Quito, Ecuador</div>
+        <p class="footer__brand-desc">Especialista con formación en la UIDE, Hospital Metropolitano de Quito y Hospital Alemán de Buenos Aires. Docente de simulación quirúrgica en la PUCE y el Hospital Metropolitano.</p>
+        <a href="https://wa.me/593984966771" target="_blank" class="btn btn--wa btn--sm">
+          <svg class="wa-icon" style="width:15px;height:15px;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +593 98 496 6771
+        </a>
+      </div>
+      <div>
+        <div class="footer__col-title">Páginas</div>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Inicio</a>
+          <a href="servicios.html" class="footer__link">Servicios</a>
+          <a href="sobre-mi.html" class="footer__link">Sobre mí</a>
+          <a href="investigacion.html" class="footer__link">Investigación</a>
+          <a href="agendar-cita.html" class="footer__link">Agendar cita</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servicios</div>
+        <div class="footer__links">
+          <a href="#vesicula" class="footer__link">Cirugía de Vesícula</a>
+          <a href="#hernias" class="footer__link">Hernias</a>
+          <a href="#apendice" class="footer__link">Apendicitis</a>
+          <a href="#reflujo" class="footer__link">Reflujo Gástrico</a>
+          <a href="#urgencias" class="footer__link">Urgencias 24/7</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📍</span><span class="footer__contact-text">Digesmed · Edificio Grecia II<br>Quito, Ecuador</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">🕐</span><span class="footer__contact-text">Lun–Vie 09:00–13:00 / 14:00–16:00<br>Urgencias: 24 horas</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📱</span><span class="footer__contact-text">+593 98 496 6771</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Dr. Santiago Muñoz Palomeque. Todos los derechos reservados.</p>
+      <p class="footer__copy">Cirugía General y Laparoscópica · Quito, Ecuador</p>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <div class="wa-float__tooltip">💬 ¿Tienes dudas? Escríbeme</div>
+  <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="wa-float__btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>56),{passive:true});
+  const hamburger=document.getElementById('hamburger');
+  const drawer=document.getElementById('navDrawer');
+  let open=false;
+  hamburger.addEventListener('click',()=>{
+    open=!open;drawer.classList.toggle('open',open);
+    const s=hamburger.querySelectorAll('span');
+    if(open){s[0].style.cssText='transform:translateY(6.5px) rotate(45deg)';s[1].style.cssText='opacity:0';s[2].style.cssText='transform:translateY(-6.5px) rotate(-45deg)'}
+    else{s.forEach(x=>x.style.cssText='')}
+  });
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

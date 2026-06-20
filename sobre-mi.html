@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí — Dr. Santiago Muñoz Palomeque · Cirujano en Quito</title>
+  <meta name="description" content="Cirujano General y Laparoscópico. Formado en la UIDE, Hospital Metropolitano de Quito y Hospital Alemán de Buenos Aires. Docente PUCE. +20 publicaciones científicas.">
+  <meta property="og:title" content="Sobre mí — Dr. Santiago Muñoz Palomeque · Cirujano en Quito">
+  <meta property="og:description" content="Cirujano formado en la UIDE, Hospital Metropolitano y Hospital Alemán de Buenos Aires. Docente de simulación quirúrgica en PUCE. +20 publicaciones científicas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dr-santiago-munoz-palomeque.com/sobre-mi.html">
+  <meta property="og:image" content="https://dr-santiago-munoz-palomeque.com/img/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0D2240;--navy-mid:#162F56;--navy-light:#1E3F72;--gold:#B8862A;--gold-warm:#CFA045;--gold-pale:#F3E8CC;--ivory:#FAF8F4;--ivory-dark:#F0EDE6;--stone:#E4E0D8;--text:#1A1A2A;--text-mid:#4A4859;--text-light:#8A8898;--white:#FFFFFF;--green-wa:#22C55E;--green-wa-h:#16A34A;--r-sm:6px;--r-md:14px;--r-lg:24px;--r-xl:36px;--shadow-sm:0 2px 8px rgba(13,34,64,.07);--shadow-md:0 8px 32px rgba(13,34,64,.11);--shadow-lg:0 20px 64px rgba(13,34,64,.16)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--ivory);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:300;line-height:1.08;letter-spacing:-0.02em}
+    h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;line-height:1.2}
+    h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;line-height:1.3}
+    p{line-height:1.78;color:var(--text-mid);font-size:1.0125rem;font-weight:300}
+    .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:inline-block}
+    .eyebrow--gold{color:var(--gold-warm)}.eyebrow--navy{color:var(--navy)}.eyebrow--stone{color:var(--text-light)}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+    .section{padding:96px 0}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:var(--r-sm);font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;border:1.5px solid transparent;transition:all .22s cubic-bezier(.4,0,.2,1);white-space:nowrap;line-height:1}
+    .btn--gold{background:var(--gold);color:var(--white);border-color:var(--gold)}.btn--gold:hover{background:var(--gold-warm);transform:translateY(-2px);box-shadow:0 8px 32px rgba(184,134,42,.25)}
+    .btn--outline-white{background:transparent;color:var(--white);border-color:rgba(255,255,255,.35)}.btn--outline-white:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.7)}
+    .btn--outline-navy{background:transparent;color:var(--navy);border-color:var(--navy)}.btn--outline-navy:hover{background:var(--navy);color:var(--white)}
+    .btn--wa{background:var(--green-wa);color:var(--white);border-color:var(--green-wa)}.btn--wa:hover{background:var(--green-wa-h);transform:translateY(-2px);box-shadow:0 8px 28px rgba(34,197,94,.3)}
+    .btn--lg{padding:18px 38px;font-size:.9375rem}.btn--sm{padding:11px 22px;font-size:.8125rem}
+    .wa-icon{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:900;transition:background .35s ease,box-shadow .35s ease}
+    .nav.scrolled{background:rgba(13,34,64,.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.06),var(--shadow-md)}
+    .nav__bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+    .nav__logo{display:flex;flex-direction:column;gap:2px}
+    .nav__logo-name{font-family:'Playfair Display',serif;font-size:1.0625rem;font-weight:700;color:var(--white);letter-spacing:.01em;line-height:1.2}
+    .nav__logo-role{font-size:.675rem;font-weight:500;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
+    .nav__links{display:flex;align-items:center;gap:36px}
+    .nav__link{font-size:.875rem;font-weight:400;color:rgba(255,255,255,.75);transition:color .18s;position:relative}
+    .nav__link::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold-warm);transition:width .22s ease}
+    .nav__link:hover,.nav__link.active{color:var(--white)}.nav__link:hover::after,.nav__link.active::after{width:100%}
+    .nav__cta{padding:10px 22px;font-size:.8375rem}
+    .nav__hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+    .nav__hamburger span{display:block;width:26px;height:1.5px;background:var(--white);border-radius:2px;transition:all .28s}
+    .nav__drawer{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(13,34,64,.98);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 32px 32px;border-top:1px solid rgba(255,255,255,.07)}
+    .nav__drawer.open{display:flex;flex-direction:column;gap:22px}
+    .nav__drawer .nav__link{font-size:1.0625rem;color:rgba(255,255,255,.85)}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:148px 0 88px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,134,42,.07) 0%,transparent 60%);pointer-events:none}
+    .page-hero__inner{max-width:760px}
+    .page-hero__eyebrow{margin-bottom:20px}
+    .page-hero__title{color:var(--white);margin-bottom:22px}
+    .page-hero__title em{font-style:italic;color:var(--gold-warm)}
+    .page-hero__sub{font-size:1.1rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.75;max-width:600px;margin-bottom:36px}
+
+    /* INTRO SPLIT */
+    .intro{background:var(--ivory)}
+    .intro__grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .intro__pull{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:300;font-style:italic;color:var(--navy);line-height:1.5;border-left:2px solid var(--gold);padding-left:28px;margin-bottom:36px}
+    .intro__body{margin-bottom:22px}
+    .intro__signature{margin-top:36px;display:flex;align-items:center;gap:16px;padding-top:24px;border-top:1px solid var(--stone)}
+    .intro__sig-avatar{width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;flex-shrink:0}
+    .intro__sig-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:2px}
+    .intro__sig-role{font-size:.8125rem;color:var(--text-light)}
+
+    /* Photo box */
+    .photo-box{border-radius:var(--r-xl);overflow:hidden;position:relative;background:var(--navy-mid)}
+    .photo-box__placeholder{aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:36px;background:linear-gradient(160deg,#1A3560 0%,#0F2347 100%)}
+    .photo-box__icon{width:100px;height:100px;border-radius:50%;background:rgba(184,134,42,.15);border:1.5px solid rgba(184,134,42,.3);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--gold-warm)}
+    .photo-box__brief{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:20px 24px;width:100%;max-width:280px;text-align:left}
+    .photo-box__brief-tag{font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-warm);margin-bottom:8px}
+    .photo-box__brief-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--white);font-weight:700;margin-bottom:4px;line-height:1.3}
+    .photo-box__brief-desc{font-size:.8125rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.55}
+
+    /* EDUCATION TIMELINE */
+    .education{background:var(--navy)}
+    .edu__header{text-align:center;margin-bottom:72px}
+    .edu__title{color:var(--white);margin-bottom:16px}
+    .edu__title em{font-style:italic;color:var(--gold-warm)}
+    .edu__sub{color:rgba(255,255,255,.55);font-size:1.0625rem;font-weight:300;max-width:500px;margin:0 auto}
+    .timeline{position:relative;max-width:900px;margin:0 auto}
+    .timeline::before{content:'';position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(184,134,42,.3) 10%,rgba(184,134,42,.3) 90%,transparent)}
+    .timeline-section{margin-bottom:64px}
+    .timeline-section-label{text-align:center;margin-bottom:36px}
+    .timeline-section-badge{display:inline-block;background:rgba(184,134,42,.15);border:1px solid rgba(184,134,42,.3);border-radius:100px;padding:6px 20px;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-warm)}
+    .timeline-item{display:grid;grid-template-columns:1fr 48px 1fr;gap:0;align-items:start;margin-bottom:28px}
+    .timeline-item:nth-child(odd) .timeline-content{grid-column:1;text-align:right;padding-right:36px}
+    .timeline-item:nth-child(odd) .timeline-empty{grid-column:3}
+    .timeline-item:nth-child(even) .timeline-content{grid-column:3;text-align:left;padding-left:36px}
+    .timeline-item:nth-child(even) .timeline-empty{grid-column:1}
+    .timeline-dot{grid-column:2;display:flex;justify-content:center;padding-top:6px}
+    .timeline-dot__circle{width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--navy);box-shadow:0 0 0 3px rgba(184,134,42,.25)}
+    .timeline-content{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-md);padding:20px 24px}
+    .timeline-content__year{font-size:.75rem;font-weight:600;color:var(--gold-warm);letter-spacing:.08em;margin-bottom:6px}
+    .timeline-content__title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white);margin-bottom:6px;line-height:1.3}
+    .timeline-content__place{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55)}
+
+    /* TEACHING */
+    .teaching{background:var(--ivory-dark)}
+    .teaching__grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .teaching__eyebrow{margin-bottom:16px}
+    .teaching__title{color:var(--navy);margin-bottom:20px}
+    .teaching__body{margin-bottom:22px}
+    .teaching__institutions{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+    .inst-card{background:var(--white);border-radius:var(--r-md);border:1px solid var(--stone);padding:20px 24px;display:flex;align-items:center;gap:16px}
+    .inst-card__icon{font-size:1.75rem;flex-shrink:0}
+    .inst-card__name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+    .inst-card__role{font-size:.875rem;font-weight:300;color:var(--text-light)}
+
+    /* Photo box horizontal */
+    .photo-box--horiz .photo-box__placeholder{aspect-ratio:5/4}
+
+    /* CERTIFICATIONS */
+    .certs{background:var(--white)}
+    .certs__header{text-align:center;margin-bottom:56px}
+    .certs__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .cert-item{background:var(--ivory);border-radius:var(--r-md);border:1px solid var(--stone);padding:20px 22px;display:flex;gap:12px;align-items:flex-start}
+    .cert-item__icon{color:var(--gold);font-size:1rem;flex-shrink:0;margin-top:2px}
+    .cert-item__text{font-size:.875rem;font-weight:400;color:var(--text-mid);line-height:1.55}
+
+    /* PHILOSOPHY */
+    .philosophy{background:var(--navy);padding:88px 0}
+    .philosophy__inner{text-align:center;max-width:760px;margin:0 auto}
+    .philosophy__eyebrow{margin-bottom:20px}
+    .philosophy__quote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;font-style:italic;color:var(--white);line-height:1.45;margin-bottom:32px}
+    .philosophy__quote em{color:var(--gold-warm);font-style:normal;font-weight:400}
+    .philosophy__author{display:inline-flex;flex-direction:column;align-items:center;gap:4px}
+    .philosophy__author-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--white)}
+    .philosophy__author-role{font-size:.8125rem;color:rgba(255,255,255,.45)}
+
+    /* CTA */
+    .cta-section{background:var(--ivory-dark);padding:88px 0}
+    .cta-section__inner{text-align:center}
+    .cta-section__eyebrow{margin-bottom:20px}
+    .cta-section__title{color:var(--navy);margin-bottom:20px}
+    .cta-section__sub{font-size:1.0625rem;font-weight:300;color:var(--text-light);max-width:520px;margin:0 auto 40px}
+    .cta-section__btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+    /* FOOTER */
+    .footer{background:#06111F}
+    .footer__main{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:64px;padding:72px 0 56px;border-bottom:1px solid rgba(255,255,255,.07)}
+    .footer__brand-name{font-family:'Playfair Display',serif;font-size:1.1875rem;color:var(--white);margin-bottom:8px}
+    .footer__brand-role{font-size:.8125rem;color:rgba(255,255,255,.4);font-weight:300;margin-bottom:22px;letter-spacing:.04em}
+    .footer__brand-desc{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:28px}
+    .footer__col-title{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:22px}
+    .footer__links{display:flex;flex-direction:column;gap:12px}
+    .footer__link{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);transition:color .18s}.footer__link:hover{color:var(--white)}
+    .footer__contact-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+    .footer__contact-icon{font-size:1rem;margin-top:1px;flex-shrink:0}
+    .footer__contact-text{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.6}
+    .footer__bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;flex-wrap:wrap}
+    .footer__copy{font-size:.8125rem;font-weight:300;color:rgba(255,255,255,.3)}
+
+    /* WA FLOAT */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:800;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .wa-float__tooltip{background:var(--white);border-radius:10px;padding:10px 18px;box-shadow:var(--shadow-lg);font-size:.875rem;font-weight:500;color:var(--navy);white-space:nowrap;opacity:0;transform:translateX(10px);transition:all .25s ease;pointer-events:none}
+    .wa-float:hover .wa-float__tooltip{opacity:1;transform:translateX(0)}
+    .wa-float__btn{width:62px;height:62px;border-radius:50%;background:var(--green-wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(34,197,94,.35);transition:all .25s ease}
+    .wa-float__btn:hover{transform:scale(1.1)}
+    .wa-float__btn svg{width:30px;height:30px;fill:white}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.24s}
+
+    @media(max-width:900px){
+      .intro__grid{grid-template-columns:1fr;gap:40px}
+      .teaching__grid{grid-template-columns:1fr;gap:40px}
+      .timeline::before{left:24px}
+      .timeline-item{grid-template-columns:48px 1fr}
+      .timeline-item:nth-child(odd) .timeline-content,.timeline-item:nth-child(even) .timeline-content{grid-column:2;text-align:left;padding-left:24px;padding-right:0}
+      .timeline-item:nth-child(odd) .timeline-empty,.timeline-item:nth-child(even) .timeline-empty{display:none}
+      .timeline-dot{grid-column:1}
+      .certs__grid{grid-template-columns:1fr 1fr}
+      .footer__main{grid-template-columns:1fr 1fr;gap:40px}
+    }
+    @media(max-width:768px){
+      .wrap{padding:0 20px}.section{padding:64px 0}
+      .nav__links{display:none}.nav__hamburger{display:flex}
+      .certs__grid{grid-template-columns:1fr}
+      .footer__main{grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
+      .footer__bottom{flex-direction:column;text-align:center}
+      .cta-section__btns{flex-direction:column;align-items:center}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav__bar">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Dr. Santiago Muñoz P.</span>
+        <span class="nav__logo-role">Cirujano General · Quito</span>
+      </a>
+      <div class="nav__links">
+        <a href="servicios.html" class="nav__link">Servicios</a>
+        <a href="sobre-mi.html" class="nav__link active">Sobre mí</a>
+        <a href="investigacion.html" class="nav__link">Investigación</a>
+        <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa nav__cta">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="servicios.html" class="nav__link">Servicios</a>
+    <a href="sobre-mi.html" class="nav__link active">Sobre mí</a>
+    <a href="investigacion.html" class="nav__link">Investigación</a>
+    <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+    <a href="https://wa.me/593984966771" target="_blank" class="btn btn--wa" style="align-self:flex-start;">Escribir por WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero__inner">
+      <div class="page-hero__eyebrow"><span class="eyebrow eyebrow--gold">Sobre el doctor</span></div>
+      <h1 class="page-hero__title">La cirugía es ciencia,<br>precisión <em>y humanidad.</em></h1>
+      <p class="page-hero__sub">Mi compromiso es unir conocimiento y experiencia para ofrecer una atención segura, actualizada y centrada en cada paciente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section intro">
+  <div class="wrap">
+    <div class="intro__grid reveal">
+      <div>
+        <blockquote class="intro__pull">"Elegí la cirugía porque en ninguna otra especialidad el médico acompaña a su paciente de manera tan completa: desde el diagnóstico hasta que vuelve a su vida normal."</blockquote>
+        <p class="intro__body">Esa responsabilidad es la que me hace estudiar constantemente y tratar cada caso como si fuera el único, con el mismo nivel de atención, respeto y compromiso que a mí me gustaría recibir.</p>
+        <p class="intro__body">Mi práctica profesional combina preparación técnica, atención cercana y comunicación clara. Procuro que cada paciente comprenda su diagnóstico, las alternativas de tratamiento y el proceso de recuperación, brindándole seguridad y confianza en cada etapa.</p>
+        <p class="intro__body">Mi trabajo en cirugía general abarca vesícula, hernias, apéndice, reflujo y urgencias abdominales, con un interés creciente en cirugía del hígado, páncreas y vías biliares.</p>
+        <div class="intro__signature">
+          <div class="intro__sig-avatar">SM</div>
+          <div>
+            <div class="intro__sig-name">Dr. Santiago Muñoz Palomeque</div>
+            <div class="intro__sig-role">Cirujano General y Laparoscópico · Quito, Ecuador</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--
+          BRIEF FOTOGRÁFICO — RETRATO PRINCIPAL
+          Imagen: Retrato editorial del doctor. 3/4 cuerpo, vertical.
+          Bata blanca con placa institucional O scrubs azul marino.
+          Postura: ligeramente girado, brazos cruzados o manos en
+          bolsillos. Mirada directa a cámara con leve sonrisa de
+          confianza. Expresión: "estás en buenas manos".
+          Fondo: consultorio Digesmed o fondo neutro cálido (gris
+          verdoso, no blanco puro). Bokeh suave.
+          Luz: natural desde ventana lateral izquierda + relleno suave.
+          Temperatura: cálida (3800-4500K). NUNCA flash directo.
+          Es la FOTO MÁS IMPORTANTE del sitio. Contratar fotógrafo
+          de retrato corporativo/médico profesional.
+        -->
+        <div class="photo-box">
+          <div class="photo-box__placeholder">
+            <div class="photo-box__icon">SM</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico · Retrato principal</div>
+              <div class="photo-box__brief-title">Retrato profesional del doctor</div>
+              <div class="photo-box__brief-desc">3/4 cuerpo. Bata o scrubs. Mirada directa, leve sonrisa de confianza. Luz cálida, bokeh. Es la foto más importante del sitio.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION TIMELINE -->
+<section class="section education">
+  <div class="wrap">
+    <div class="edu__header reveal">
+      <div style="margin-bottom:16px;"><span class="eyebrow eyebrow--gold">Formación académica</span></div>
+      <h2 class="edu__title">Preparado en los centros<br><em>más exigentes del Ecuador y Argentina</em></h2>
+      <p class="edu__sub">Una trayectoria construida en los hospitales de mayor complejidad y nivel académico de la región.</p>
+    </div>
+    <div class="timeline reveal">
+
+      <div class="timeline-section">
+        <div class="timeline-section-label"><span class="timeline-section-badge">Pregrado — Medicina General</span></div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-content__year">Cuenca, Ecuador</div>
+            <div class="timeline-content__title">Médico Cirujano</div>
+            <div class="timeline-content__place">Universidad Católica de Cuenca</div>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-content__year">Cuenca, Ecuador</div>
+            <div class="timeline-content__title">Internado Rotativo</div>
+            <div class="timeline-content__place">Hospital de Especialidades "José Carrasco Arteaga"</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-section">
+        <div class="timeline-section-label"><span class="timeline-section-badge">Posgrado — Cirugía General y Laparoscópica · Graduado marzo 2026</span></div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-content__year">Quito, Ecuador</div>
+            <div class="timeline-content__title">Residencia en Cirugía General</div>
+            <div class="timeline-content__place">Universidad Internacional del Ecuador (UIDE) · Hospital Metropolitano de Quito</div>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-content__year">Quito, Ecuador</div>
+            <div class="timeline-content__title">Rotación — Cirugía Compleja</div>
+            <div class="timeline-content__place">Hospital de Especialidades "Carlos Andrade Marín" (HECAM)</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-content__year">Quito, Ecuador</div>
+            <div class="timeline-content__title">Rotación — Cirugía General</div>
+            <div class="timeline-content__place">Hospital General San Francisco</div>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot"><div class="timeline-dot__circle"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-content__year">Buenos Aires, Argentina</div>
+            <div class="timeline-content__title">Rotación Internacional</div>
+            <div class="timeline-content__place">Hospital Alemán de Buenos Aires — Centro de referencia en cirugía de alta complejidad</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section class="section teaching">
+  <div class="wrap">
+    <div class="teaching__grid reveal">
+      <div>
+        <div class="teaching__eyebrow"><span class="eyebrow eyebrow--navy">Docencia universitaria</span></div>
+        <h2 class="teaching__title">Enseño las técnicas que practico</h2>
+        <p class="teaching__body">La docencia es una extensión natural de mi compromiso con la cirugía. Enseñar me obliga a mantenerme en el filo del conocimiento y a comunicar con precisión — exactamente lo que hago con mis pacientes.</p>
+        <p class="teaching__body">Participo activamente en congresos internacionales y publico en revistas científicas porque creo que un cirujano que no se actualiza no puede ofrecer los mejores resultados.</p>
+        <div class="teaching__institutions">
+          <div class="inst-card">
+            <div class="inst-card__icon">🏛️</div>
+            <div>
+              <div class="inst-card__name">Pontificia Universidad Católica del Ecuador (PUCE)</div>
+              <div class="inst-card__role">Docente de simulación quirúrgica — Posgrado de Cirugía</div>
+            </div>
+          </div>
+          <div class="inst-card">
+            <div class="inst-card__icon">🏥</div>
+            <div>
+              <div class="inst-card__name">Hospital Metropolitano de Quito</div>
+              <div class="inst-card__role">Docente de simulación quirúrgica — Posgrado de Cirugía</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!--
+          BRIEF FOTOGRÁFICO — DOCENCIA / QUIRÓFANO
+          Imagen: Doctor en entorno académico o de simulación quirúrgica.
+          Puede ser: guiando a un residente en sala de simulación, frente
+          a un modelo anatómico, o en el aula del posgrado.
+          Alternativa: Doctor con scrubs en pasillo de hospital, bata de
+          cirugía, mirada hacia el frente con autoridad calmada.
+          Transmitir: liderazgo académico, preparación continua.
+          Luz: clínica pero cálida. No flash duro.
+        -->
+        <div class="photo-box photo-box--horiz">
+          <div class="photo-box__placeholder" style="aspect-ratio:5/4;">
+            <div style="font-size:2rem;">🏛️</div>
+            <div class="photo-box__brief">
+              <div class="photo-box__brief-tag">Brief fotográfico · Docencia</div>
+              <div class="photo-box__brief-title">Doctor en entorno académico</div>
+              <div class="photo-box__brief-desc">Sala de simulación quirúrgica o aula del posgrado. Transmitir liderazgo y preparación continua.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section certs" style="padding:72px 0;">
+  <div class="wrap">
+    <div class="certs__header reveal">
+      <span class="eyebrow eyebrow--navy" style="display:block;margin-bottom:16px;">Formación complementaria</span>
+      <h2 style="color:var(--navy);">Certificaciones y cursos</h2>
+    </div>
+    <div class="certs__grid reveal">
+      <div class="cert-item"><span class="cert-item__icon">📋</span><span class="cert-item__text">Understanding Research Methods</span></div>
+      <div class="cert-item"><span class="cert-item__icon">📋</span><span class="cert-item__text">II Congreso de Trauma</span></div>
+      <div class="cert-item"><span class="cert-item__icon">📋</span><span class="cert-item__text">Seminario Urgencias y Emergencias Médicas</span></div>
+      <div class="cert-item"><span class="cert-item__icon">📋</span><span class="cert-item__text">Curso Manejo de Antibióticos en Trauma</span></div>
+      <div class="cert-item"><span class="cert-item__icon">🎤</span><span class="cert-item__text">Ponente — Congreso Virtual Dilemas y Nuevos Paradigmas en Patologías Clínico Quirúrgicas (2 ponencias)</span></div>
+      <div class="cert-item"><span class="cert-item__icon">🏆</span><span class="cert-item__text">Abanderado del Pabellón Nacional</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <div class="wrap">
+    <div class="philosophy__inner reveal">
+      <div style="margin-bottom:20px;"><span class="eyebrow eyebrow--gold">Mi misión</span></div>
+      <p class="philosophy__quote">
+        "Brindar una atención médica y quirúrgica de la más alta calidad para ayudar a mis pacientes a obtener los mejores resultados, siempre respaldado por la <em>evidencia científica más actual</em> y con la mayor calidez humana."
+      </p>
+      <div class="philosophy__author">
+        <div class="philosophy__author-name">Dr. Santiago Muñoz Palomeque</div>
+        <div class="philosophy__author-role">Cirujano General y Laparoscópico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-section__inner reveal">
+      <div class="cta-section__eyebrow"><span class="eyebrow eyebrow--navy">¿Listo para dar el siguiente paso?</span></div>
+      <h2 class="cta-section__title">Agenda tu consulta y sal con un diagnóstico claro.</h2>
+      <p class="cta-section__sub">Respondo personalmente cada mensaje. Tiempo promedio de respuesta menor a 1 hora.</p>
+      <div class="cta-section__btns">
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa btn--lg">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar consulta
+        </a>
+        <a href="investigacion.html" class="btn btn--outline-navy">Ver mi investigación →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__main">
+      <div>
+        <div class="footer__brand-name">Dr. Santiago Muñoz Palomeque</div>
+        <div class="footer__brand-role">Cirujano General y Laparoscópico · Quito, Ecuador</div>
+        <p class="footer__brand-desc">Especialista con formación en la UIDE, Hospital Metropolitano de Quito y Hospital Alemán de Buenos Aires. Docente de simulación quirúrgica en la PUCE y el Hospital Metropolitano.</p>
+        <a href="https://wa.me/593984966771" target="_blank" class="btn btn--wa btn--sm">
+          <svg class="wa-icon" style="width:15px;height:15px;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +593 98 496 6771
+        </a>
+      </div>
+      <div>
+        <div class="footer__col-title">Páginas</div>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Inicio</a>
+          <a href="servicios.html" class="footer__link">Servicios</a>
+          <a href="sobre-mi.html" class="footer__link">Sobre mí</a>
+          <a href="investigacion.html" class="footer__link">Investigación</a>
+          <a href="agendar-cita.html" class="footer__link">Agendar cita</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servicios</div>
+        <div class="footer__links">
+          <a href="servicios.html#vesicula" class="footer__link">Cirugía de Vesícula</a>
+          <a href="servicios.html#hernias" class="footer__link">Hernias</a>
+          <a href="servicios.html#apendice" class="footer__link">Apendicitis</a>
+          <a href="servicios.html#reflujo" class="footer__link">Reflujo Gástrico</a>
+          <a href="servicios.html#urgencias" class="footer__link">Urgencias 24/7</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📍</span><span class="footer__contact-text">Digesmed · Edificio Grecia II<br>Quito, Ecuador</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">🕐</span><span class="footer__contact-text">Lun–Vie 09:00–13:00 / 14:00–16:00<br>Urgencias: 24 horas</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📱</span><span class="footer__contact-text">+593 98 496 6771</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Dr. Santiago Muñoz Palomeque. Todos los derechos reservados.</p>
+      <p class="footer__copy">Cirugía General y Laparoscópica · Quito, Ecuador</p>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <div class="wa-float__tooltip">💬 ¿Tienes dudas? Escríbeme</div>
+  <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="wa-float__btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>56),{passive:true});
+  const hamburger=document.getElementById('hamburger');
+  const drawer=document.getElementById('navDrawer');
+  let open=false;
+  hamburger.addEventListener('click',()=>{
+    open=!open;drawer.classList.toggle('open',open);
+    const s=hamburger.querySelectorAll('span');
+    if(open){s[0].style.cssText='transform:translateY(6.5px) rotate(45deg)';s[1].style.cssText='opacity:0';s[2].style.cssText='transform:translateY(-6.5px) rotate(-45deg)'}
+    else{s.forEach(x=>x.style.cssText='')}
+  });
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigación — Dr. Santiago Muñoz Palomeque · Cirujano en Quito</title>
+  <meta name="description" content="+20 publicaciones científicas internacionales en cirugía laparoscópica, oncológica y de alta complejidad. Investigación aplicada a la práctica clínica en Ecuador.">
+  <meta property="og:title" content="Investigación Científica — Dr. Santiago Muñoz Palomeque · Cirujano en Quito">
+  <meta property="og:description" content="+20 publicaciones científicas en cirugía laparoscópica y oncológica. La investigación que respalda cada técnica aplicada. Quito, Ecuador.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dr-santiago-munoz-palomeque.com/investigacion.html">
+  <meta property="og:image" content="https://dr-santiago-munoz-palomeque.com/img/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0D2240;--navy-mid:#162F56;--navy-light:#1E3F72;--gold:#B8862A;--gold-warm:#CFA045;--gold-pale:#F3E8CC;--ivory:#FAF8F4;--ivory-dark:#F0EDE6;--stone:#E4E0D8;--text:#1A1A2A;--text-mid:#4A4859;--text-light:#8A8898;--white:#FFFFFF;--green-wa:#22C55E;--green-wa-h:#16A34A;--r-sm:6px;--r-md:14px;--r-lg:24px;--r-xl:36px;--shadow-sm:0 2px 8px rgba(13,34,64,.07);--shadow-md:0 8px 32px rgba(13,34,64,.11);--shadow-lg:0 20px 64px rgba(13,34,64,.16)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--ivory);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:300;line-height:1.08;letter-spacing:-0.02em}
+    h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;line-height:1.2}
+    h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;line-height:1.3}
+    p{line-height:1.78;color:var(--text-mid);font-size:1.0125rem;font-weight:300}
+    .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:inline-block}
+    .eyebrow--gold{color:var(--gold-warm)}.eyebrow--navy{color:var(--navy)}.eyebrow--stone{color:var(--text-light)}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+    .section{padding:96px 0}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:var(--r-sm);font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;border:1.5px solid transparent;transition:all .22s cubic-bezier(.4,0,.2,1);white-space:nowrap;line-height:1}
+    .btn--gold{background:var(--gold);color:var(--white);border-color:var(--gold)}.btn--gold:hover{background:var(--gold-warm);transform:translateY(-2px);box-shadow:0 8px 32px rgba(184,134,42,.25)}
+    .btn--outline-white{background:transparent;color:var(--white);border-color:rgba(255,255,255,.35)}.btn--outline-white:hover{background:rgba(255,255,255,.08)}
+    .btn--outline-navy{background:transparent;color:var(--navy);border-color:var(--navy)}.btn--outline-navy:hover{background:var(--navy);color:var(--white)}
+    .btn--wa{background:var(--green-wa);color:var(--white);border-color:var(--green-wa)}.btn--wa:hover{background:var(--green-wa-h);transform:translateY(-2px);box-shadow:0 8px 28px rgba(34,197,94,.3)}
+    .btn--lg{padding:18px 38px;font-size:.9375rem}.btn--sm{padding:11px 22px;font-size:.8125rem}
+    .wa-icon{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:900;transition:background .35s ease,box-shadow .35s ease}
+    .nav.scrolled{background:rgba(13,34,64,.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.06),var(--shadow-md)}
+    .nav__bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+    .nav__logo{display:flex;flex-direction:column;gap:2px}
+    .nav__logo-name{font-family:'Playfair Display',serif;font-size:1.0625rem;font-weight:700;color:var(--white);line-height:1.2}
+    .nav__logo-role{font-size:.675rem;font-weight:500;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
+    .nav__links{display:flex;align-items:center;gap:36px}
+    .nav__link{font-size:.875rem;font-weight:400;color:rgba(255,255,255,.75);transition:color .18s;position:relative}
+    .nav__link::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold-warm);transition:width .22s ease}
+    .nav__link:hover,.nav__link.active{color:var(--white)}.nav__link:hover::after,.nav__link.active::after{width:100%}
+    .nav__cta{padding:10px 22px;font-size:.8375rem}
+    .nav__hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+    .nav__hamburger span{display:block;width:26px;height:1.5px;background:var(--white);border-radius:2px;transition:all .28s}
+    .nav__drawer{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(13,34,64,.98);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:28px 32px 32px;border-top:1px solid rgba(255,255,255,.07)}
+    .nav__drawer.open{display:flex;flex-direction:column;gap:22px}
+    .nav__drawer .nav__link{font-size:1.0625rem;color:rgba(255,255,255,.85)}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--navy);padding:148px 0 88px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,134,42,.07) 0%,transparent 60%);pointer-events:none}
+    .page-hero__inner{max-width:760px}
+    .page-hero__eyebrow{margin-bottom:20px}
+    .page-hero__title{color:var(--white);margin-bottom:22px}
+    .page-hero__title em{font-style:italic;color:var(--gold-warm)}
+    .page-hero__sub{font-size:1.1rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.75;max-width:600px;margin-bottom:40px}
+    .page-hero__stats{display:flex;gap:40px;flex-wrap:wrap}
+    .stat-pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:18px 24px;text-align:center}
+    .stat-pill__num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--white);line-height:1;margin-bottom:4px}
+    .stat-pill__label{font-size:.78rem;color:rgba(255,255,255,.5)}
+
+    /* PATIENT BENEFITS */
+    .benefits{background:var(--ivory-dark)}
+    .benefits__header{text-align:center;margin-bottom:64px}
+    .benefits__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .benefit-card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--stone);padding:32px 28px;text-align:center}
+    .benefit-card__icon{font-size:2.25rem;margin-bottom:18px}
+    .benefit-card__title{font-family:'Playfair Display',serif;font-size:1.125rem;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.3}
+    .benefit-card__text{font-size:.9rem;font-weight:300;line-height:1.7}
+
+    /* RESEARCH AREAS */
+    .areas{background:var(--navy)}
+    .areas__header{margin-bottom:56px}
+    .areas__eyebrow{margin-bottom:16px}
+    .areas__title{color:var(--white);margin-bottom:16px}
+    .areas__sub{color:rgba(255,255,255,.55);font-size:1.0625rem;font-weight:300;max-width:600px}
+    .areas__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(255,255,255,.06);border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+    .area-card{background:rgba(13,34,64,.7);padding:40px;transition:background .25s}
+    .area-card:hover{background:rgba(30,63,114,.5)}
+    .area-card__num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:rgba(184,134,42,.2);line-height:1;margin-bottom:16px}
+    .area-card__title{font-family:'Playfair Display',serif;font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;line-height:1.35}
+    .area-card__text{font-size:.9375rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.75}
+    .area-card__tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .area-tag{background:rgba(184,134,42,.12);border:1px solid rgba(184,134,42,.2);border-radius:100px;padding:4px 12px;font-size:.75rem;font-weight:500;color:var(--gold-warm)}
+
+    /* PUBLICATIONS */
+    .publications{background:var(--white)}
+    .pubs__header{margin-bottom:56px}
+    .pubs__eyebrow{margin-bottom:16px}
+    .pubs__title{color:var(--navy);margin-bottom:12px}
+    .pubs__sub{font-size:1.0625rem;font-weight:300;color:var(--text-light);max-width:600px}
+    .pubs-category{margin-bottom:56px}
+    .pubs-category__label{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--stone);width:100%}
+    .pubs-category__icon{font-size:1.25rem}
+    .pubs-category__title{font-family:'Playfair Display',serif;font-size:1.1875rem;font-weight:700;color:var(--navy)}
+    .pubs-list{display:flex;flex-direction:column;gap:0}
+    .pub-item{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid var(--stone)}
+    .pub-item:last-child{border-bottom:none}
+    .pub-item__num{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--gold);line-height:1.3;text-align:right}
+    .pub-item__title{font-size:.9375rem;font-weight:500;color:var(--text);line-height:1.6}
+    .pub-item__meta{font-size:.8125rem;font-weight:300;color:var(--text-light);margin-top:4px}
+
+    /* PROFILES */
+    .profiles{background:var(--ivory-dark);padding:72px 0}
+    .profiles__header{text-align:center;margin-bottom:48px}
+    .profiles__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
+    .profile-card{background:var(--white);border-radius:var(--r-xl);border:1px solid var(--stone);padding:36px;text-align:center;box-shadow:var(--shadow-sm)}
+    .profile-card__icon{font-size:2.5rem;margin-bottom:16px}
+    .profile-card__name{font-family:'Playfair Display',serif;font-size:1.1875rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+    .profile-card__desc{font-size:.875rem;font-weight:300;color:var(--text-light);line-height:1.65;margin-bottom:24px}
+    .profile-card__link{display:inline-flex;align-items:center;gap:7px;font-size:.875rem;font-weight:600;color:var(--gold)}
+
+    /* CTA */
+    .cta-section{background:var(--navy);padding:88px 0}
+    .cta-section__inner{text-align:center}
+    .cta-section__title{color:var(--white);margin-bottom:20px;max-width:680px;margin-left:auto;margin-right:auto}
+    .cta-section__sub{font-size:1.0625rem;font-weight:300;color:rgba(255,255,255,.6);max-width:520px;margin:0 auto 40px}
+    .cta-section__btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+    /* FOOTER */
+    .footer{background:#06111F}
+    .footer__main{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:64px;padding:72px 0 56px;border-bottom:1px solid rgba(255,255,255,.07)}
+    .footer__brand-name{font-family:'Playfair Display',serif;font-size:1.1875rem;color:var(--white);margin-bottom:8px}
+    .footer__brand-role{font-size:.8125rem;color:rgba(255,255,255,.4);font-weight:300;margin-bottom:22px;letter-spacing:.04em}
+    .footer__brand-desc{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.45);line-height:1.75;margin-bottom:28px}
+    .footer__col-title{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:22px}
+    .footer__links{display:flex;flex-direction:column;gap:12px}
+    .footer__link{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);transition:color .18s}.footer__link:hover{color:var(--white)}
+    .footer__contact-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+    .footer__contact-icon{font-size:1rem;margin-top:1px;flex-shrink:0}
+    .footer__contact-text{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.6}
+    .footer__bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;flex-wrap:wrap}
+    .footer__copy{font-size:.8125rem;font-weight:300;color:rgba(255,255,255,.3)}
+
+    /* WA FLOAT */
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:800;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .wa-float__tooltip{background:var(--white);border-radius:10px;padding:10px 18px;box-shadow:var(--shadow-lg);font-size:.875rem;font-weight:500;color:var(--navy);white-space:nowrap;opacity:0;transform:translateX(10px);transition:all .25s ease;pointer-events:none}
+    .wa-float:hover .wa-float__tooltip{opacity:1;transform:translateX(0)}
+    .wa-float__btn{width:62px;height:62px;border-radius:50%;background:var(--green-wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(34,197,94,.35);transition:all .25s ease}
+    .wa-float__btn:hover{transform:scale(1.1)}
+    .wa-float__btn svg{width:30px;height:30px;fill:white}
+
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.24s}.reveal-delay-3{transition-delay:.36s}
+
+    @media(max-width:1024px){.benefits__grid{grid-template-columns:repeat(2,1fr)}.areas__grid{grid-template-columns:1fr}.footer__main{grid-template-columns:1fr 1fr;gap:40px}}
+    @media(max-width:768px){
+      .wrap{padding:0 20px}.section{padding:64px 0}
+      .nav__links{display:none}.nav__hamburger{display:flex}
+      .benefits__grid{grid-template-columns:1fr}
+      .profiles__grid{grid-template-columns:1fr}
+      .page-hero__stats{flex-direction:column;gap:16px}
+      .footer__main{grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
+      .footer__bottom{flex-direction:column;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav__bar">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Dr. Santiago Muñoz P.</span>
+        <span class="nav__logo-role">Cirujano General · Quito</span>
+      </a>
+      <div class="nav__links">
+        <a href="servicios.html" class="nav__link">Servicios</a>
+        <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
+        <a href="investigacion.html" class="nav__link active">Investigación</a>
+        <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa nav__cta">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="navDrawer">
+    <a href="servicios.html" class="nav__link">Servicios</a>
+    <a href="sobre-mi.html" class="nav__link">Sobre mí</a>
+    <a href="investigacion.html" class="nav__link active">Investigación</a>
+    <a href="agendar-cita.html" class="nav__link">Agendar cita</a>
+    <a href="https://wa.me/593984966771" target="_blank" class="btn btn--wa" style="align-self:flex-start;">Escribir por WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero__inner">
+      <div class="page-hero__eyebrow"><span class="eyebrow eyebrow--gold">Investigación científica</span></div>
+      <h1 class="page-hero__title">Cada técnica que aplico<br>viene de investigación <em>que publico.</em></h1>
+      <p class="page-hero__sub">A través de publicaciones científicas internacionales, el Dr. Muñoz Palomeque estudia y aplica las técnicas más avanzadas en cirugía, con el objetivo de ofrecer tratamientos más seguros y efectivos.</p>
+      <div class="page-hero__stats">
+        <div class="stat-pill">
+          <div class="stat-pill__num">+20</div>
+          <div class="stat-pill__label">Publicaciones internacionales</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-pill__num">4</div>
+          <div class="stat-pill__label">Líneas de investigación activa</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-pill__num">2</div>
+          <div class="stat-pill__label">Ponencias en congresos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATIENT BENEFITS -->
+<section class="section benefits">
+  <div class="wrap">
+    <div class="benefits__header reveal">
+      <span class="eyebrow eyebrow--navy" style="display:block;margin-bottom:16px;">¿Por qué importa esto para ti?</span>
+      <h2 style="color:var(--navy);max-width:560px;margin:0 auto;">Un cirujano que investiga te ofrece resultados que otros no pueden.</h2>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-card__icon">🛡️</div>
+        <div class="benefit-card__title">Técnicas más seguras</div>
+        <p class="benefit-card__text">La investigación identifica qué métodos tienen menor riesgo de complicaciones antes de aplicarlos en pacientes.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-card__icon">💊</div>
+        <div class="benefit-card__title">Menos dolor post-operatorio</div>
+        <p class="benefit-card__text">La evidencia científica guía el manejo del dolor y la recuperación para que regreses antes a tu vida normal.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-card__icon">⚡</div>
+        <div class="benefit-card__title">Recuperación más rápida</div>
+        <p class="benefit-card__text">Técnicas validadas clínicamente permiten incisiones más pequeñas, menos trauma y alta hospitalaria en horas.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-3">
+        <div class="benefit-card__icon">📊</div>
+        <div class="benefit-card__title">Decisiones basadas en evidencia</div>
+        <p class="benefit-card__text">No practicamos en base a tradición ni intuición. Cada decisión clínica está respaldada por la literatura científica más reciente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH AREAS -->
+<section class="section areas">
+  <div class="wrap">
+    <div class="areas__header reveal">
+      <div class="areas__eyebrow"><span class="eyebrow eyebrow--gold">Líneas de investigación</span></div>
+      <h2 class="areas__title">Investigación aplicada<br>a la práctica clínica</h2>
+      <p class="areas__sub">Cuatro áreas donde el trabajo científico del Dr. Muñoz Palomeque genera impacto directo en los resultados de sus pacientes.</p>
+    </div>
+    <div class="areas__grid reveal">
+      <div class="area-card">
+        <div class="area-card__num">01</div>
+        <div class="area-card__title">Cirugía Oncológica Mínimamente Invasiva</div>
+        <p class="area-card__text">Evaluación y aplicación de tecnologías avanzadas en procedimientos de alta complejidad: hepatectomías robóticas, manejo de tumores hepáticos y pancreáticos, y cirugía de vías biliares.</p>
+        <div class="area-card__tags">
+          <span class="area-tag">Robótica</span>
+          <span class="area-tag">Laparoscopia avanzada</span>
+          <span class="area-tag">Hígado y páncreas</span>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-card__num">02</div>
+        <div class="area-card__title">Reportes de Casos Complejos</div>
+        <p class="area-card__text">Documentación y análisis de casos quirúrgicos inusuales o de alta dificultad técnica, contribuyendo al conocimiento colectivo de cómo manejar situaciones que no siguen el patrón habitual.</p>
+        <div class="area-card__tags">
+          <span class="area-tag">Casos infrecuentes</span>
+          <span class="area-tag">Urgencias complejas</span>
+          <span class="area-tag">Patología crítica</span>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-card__num">03</div>
+        <div class="area-card__title">Innovación y Simulación Quirúrgica</div>
+        <p class="area-card__text">Investigación sobre cómo la simulación mejora las habilidades quirúrgicas antes de que el cirujano opere en un paciente real. Objetivo: reducir complicaciones, mejorar precisión y optimizar resultados clínicos.</p>
+        <div class="area-card__tags">
+          <span class="area-tag">Simulación laparoscópica</span>
+          <span class="area-tag">Formación continua</span>
+          <span class="area-tag">Seguridad del paciente</span>
+        </div>
+      </div>
+      <div class="area-card">
+        <div class="area-card__num">04</div>
+        <div class="area-card__title">Manejo Nutricional en Cirugía</div>
+        <p class="area-card__text">Evaluación del impacto del estado nutricional en los resultados quirúrgicos, incluyendo estrategias de prehabilitación y recuperación mejorada (ERAS) para cirugías digestivas complejas.</p>
+        <div class="area-card__tags">
+          <span class="area-tag">Prehabilitación</span>
+          <span class="area-tag">Protocolos ERAS</span>
+          <span class="area-tag">Cirugía digestiva</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section publications">
+  <div class="wrap">
+    <div class="pubs__header reveal">
+      <div class="pubs__eyebrow"><span class="eyebrow eyebrow--navy">Producción científica</span></div>
+      <h2 class="pubs__title">Publicaciones en revistas<br>científicas internacionales</h2>
+      <p class="pubs__sub">Investigación publicada y revisada por pares en revistas especializadas de cirugía, gastroenterología y medicina crítica.</p>
+    </div>
+
+    <div class="pubs-category reveal">
+      <div class="pubs-category__label">
+        <span class="pubs-category__icon">🔬</span>
+        <span class="pubs-category__title">Cirugía Laparoscópica y Robótica</span>
+      </div>
+      <div class="pubs-list">
+        <div class="pub-item"><div class="pub-item__num">1</div><div><div class="pub-item__title">Simulación laparoscópica para derivaciones biliodigestivas en un centro de entrenamiento quirúrgico en Quito, Ecuador</div><div class="pub-item__meta">Cirugía laparoscópica · Entrenamiento quirúrgico</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">2</div><div><div class="pub-item__title">Laparoscopic management of left-sided gallbladder with aberrant biliary anatomy: technical considerations and surgical tips</div><div class="pub-item__meta">Cirugía biliar laparoscópica · Anatomía aberrante</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">3</div><div><div class="pub-item__title">Transcystic biliary tract exploration during single-stage treatment for cholecystitis/symptomatic cholelithiasis plus choledocholithiasis using the SpyGlass system</div><div class="pub-item__meta">Cirugía biliar · Sistema SpyGlass</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">4</div><div><div class="pub-item__title">Efficacy of Robotic Hepatectomy Versus Laparoscopic Hepatectomy in Patients with Liver Tumors — Meta Analysis</div><div class="pub-item__meta">Metaanálisis · Cirugía robótica hepática</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">5</div><div><div class="pub-item__title">Efficacy of robotic versus laparoscopic hepatectomy in patients with liver tumors — a systematic review protocol</div><div class="pub-item__meta">Revisión sistemática · Cirugía hepática</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">6</div><div><div class="pub-item__title">Robotic management of superior mesenteric artery syndrome</div><div class="pub-item__meta">Cirugía robótica · Síndrome de arteria mesentérica superior</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">7</div><div><div class="pub-item__title">Revisional surgery for persistent dysphagia plus Roux Y gastric bypass robot-assisted in a patient with obesity</div><div class="pub-item__meta">Cirugía robótica revisional · Obesidad</div></div></div>
+      </div>
+    </div>
+
+    <div class="pubs-category reveal">
+      <div class="pubs-category__label">
+        <span class="pubs-category__icon">🫁</span>
+        <span class="pubs-category__title">Hígado, Páncreas y Vías Biliares</span>
+      </div>
+      <div class="pubs-list">
+        <div class="pub-item"><div class="pub-item__num">8</div><div><div class="pub-item__title">Robotic left hepatectomy for the management of mucinous cystic neoplasm of the liver with atypical presentation inside the biliary tract</div><div class="pub-item__meta">Hepatectomía robótica · Neoplasia quística</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">9</div><div><div class="pub-item__title">Innovation in the percutaneous management of benign hepaticojejunostomy stricture with multiple lithiasis using SpyGlass Discover and biodegradable stent</div><div class="pub-item__meta">Innovación · Estenosis biliar · Stent biodegradable</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">10</div><div><div class="pub-item__title">Right renal autotransplantation as a kidney-sparing strategy in complex symptomatic angiomyolipoma</div><div class="pub-item__meta">Autotrasplante renal · Estrategia conservadora</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">11</div><div><div class="pub-item__title">Manejo en los pacientes con pancreatitis necrotizante aguda</div><div class="pub-item__meta">Pancreatitis · Manejo clínico-quirúrgico</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">12</div><div><div class="pub-item__title">Right colon interposition in benign esophageal stricture and gastric atrophy: technical nuances and functional outcomes</div><div class="pub-item__meta">Cirugía esofágica compleja · Resultados funcionales</div></div></div>
+      </div>
+    </div>
+
+    <div class="pubs-category reveal">
+      <div class="pubs-category__label">
+        <span class="pubs-category__icon">⚡</span>
+        <span class="pubs-category__title">Urgencias y Patología Compleja</span>
+      </div>
+      <div class="pubs-list">
+        <div class="pub-item"><div class="pub-item__num">13</div><div><div class="pub-item__title">Beyond the weight loss: revisiting small bowel obstruction as an underestimated risk of intragastric balloons</div><div class="pub-item__meta">Complicaciones · Globos intragástricos · Obstrucción intestinal</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">14</div><div><div class="pub-item__title">Persistent hypokalemia due to Conn's syndrome resolved by robot-assisted laparoscopic adrenalectomy</div><div class="pub-item__meta">Síndrome de Conn · Adrenalectomía robótica</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">15</div><div><div class="pub-item__title">Chronic pericarditis secondary to pericardial lymphangioma — an unusual presentation of an unusual tumor</div><div class="pub-item__meta">Pericarditis · Linfangioma pericárdico</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">16</div><div><div class="pub-item__title">Mixed functional tumor of the left adrenal as a cause of palpitations — surgical management</div><div class="pub-item__meta">Tumor adrenal · Manejo quirúrgico</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">17</div><div><div class="pub-item__title">Progressive dysphagia from an esophageal liposarcoma, a complex problem in a challenging setting</div><div class="pub-item__meta">Liposarcoma esofágico · Disfagia progresiva</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">18</div><div><div class="pub-item__title">Procedimientos quirúrgicos en pacientes con cáncer de ovario ingresadas en el Hospital Metropolitano de Quito</div><div class="pub-item__meta">Oncología ginecológica · Hospital Metropolitano</div></div></div>
+      </div>
+    </div>
+
+    <div class="pubs-category reveal">
+      <div class="pubs-category__label">
+        <span class="pubs-category__icon">📊</span>
+        <span class="pubs-category__title">Bariatría y Nutrición</span>
+      </div>
+      <div class="pubs-list">
+        <div class="pub-item"><div class="pub-item__num">19</div><div><div class="pub-item__title">Evaluation of the Efficacy and Safety of the Allurion® Gastric Balloon in 300 Patients from a Single Metabolic Center in Ecuador</div><div class="pub-item__meta">Globo gástrico · Bariatría · Ecuador</div></div></div>
+        <div class="pub-item"><div class="pub-item__num">20</div><div><div class="pub-item__title">Mini-revisión académica sobre medicina crítica</div><div class="pub-item__meta">Medicina crítica · Revisión académica</div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESEARCH PROFILES -->
+<section class="profiles">
+  <div class="wrap">
+    <div class="profiles__header reveal">
+      <span class="eyebrow eyebrow--navy" style="display:block;margin-bottom:16px;">Perfiles de investigación</span>
+      <h2 style="color:var(--navy);">Verificar publicaciones</h2>
+    </div>
+    <div class="profiles__grid reveal">
+      <div class="profile-card">
+        <div class="profile-card__icon">🔖</div>
+        <div class="profile-card__name">ORCiD</div>
+        <p class="profile-card__desc">Identificador único y persistente que vincula todas las contribuciones científicas del Dr. Muñoz Palomeque a lo largo de su carrera investigadora.</p>
+        <span class="profile-card__link">Ver perfil ORCiD →</span>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card__icon">🔬</div>
+        <div class="profile-card__name">ResearchGate</div>
+        <p class="profile-card__desc">Red científica donde están disponibles las publicaciones, colaboraciones y contribuciones académicas en el campo de la cirugía.</p>
+        <span class="profile-card__link">Ver perfil ResearchGate →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-section__inner reveal">
+      <div style="margin-bottom:20px;"><span class="eyebrow eyebrow--gold">¿Quieres un cirujano que se mantiene actualizado?</span></div>
+      <h2 class="cta-section__title">La investigación que publico es la misma que aplico en tu cirugía.</h2>
+      <p class="cta-section__sub">Agenda una consulta y recibe una evaluación basada en la evidencia científica más reciente disponible.</p>
+      <div class="cta-section__btns">
+        <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="btn btn--wa btn--lg">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar consulta
+        </a>
+        <a href="sobre-mi.html" class="btn btn--outline-white btn--lg">Ver mi trayectoria →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__main">
+      <div>
+        <div class="footer__brand-name">Dr. Santiago Muñoz Palomeque</div>
+        <div class="footer__brand-role">Cirujano General y Laparoscópico · Quito, Ecuador</div>
+        <p class="footer__brand-desc">Especialista con formación en la UIDE, Hospital Metropolitano de Quito y Hospital Alemán de Buenos Aires. Docente de simulación quirúrgica en la PUCE y el Hospital Metropolitano.</p>
+        <a href="https://wa.me/593984966771" target="_blank" class="btn btn--wa btn--sm">
+          <svg class="wa-icon" style="width:15px;height:15px;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +593 98 496 6771
+        </a>
+      </div>
+      <div>
+        <div class="footer__col-title">Páginas</div>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Inicio</a>
+          <a href="servicios.html" class="footer__link">Servicios</a>
+          <a href="sobre-mi.html" class="footer__link">Sobre mí</a>
+          <a href="investigacion.html" class="footer__link">Investigación</a>
+          <a href="agendar-cita.html" class="footer__link">Agendar cita</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servicios</div>
+        <div class="footer__links">
+          <a href="servicios.html#vesicula" class="footer__link">Cirugía de Vesícula</a>
+          <a href="servicios.html#hernias" class="footer__link">Hernias</a>
+          <a href="servicios.html#apendice" class="footer__link">Apendicitis</a>
+          <a href="servicios.html#reflujo" class="footer__link">Reflujo Gástrico</a>
+          <a href="servicios.html#urgencias" class="footer__link">Urgencias 24/7</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📍</span><span class="footer__contact-text">Digesmed · Edificio Grecia II<br>Quito, Ecuador</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">🕐</span><span class="footer__contact-text">Lun–Vie 09:00–13:00 / 14:00–16:00<br>Urgencias: 24 horas</span></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">📱</span><span class="footer__contact-text">+593 98 496 6771</span></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Dr. Santiago Muñoz Palomeque. Todos los derechos reservados.</p>
+      <p class="footer__copy">Cirugía General y Laparoscópica · Quito, Ecuador</p>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <div class="wa-float__tooltip">💬 ¿Tienes dudas? Escríbeme</div>
+  <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20una%20consulta." target="_blank" class="wa-float__btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>56),{passive:true});
+  const hamburger=document.getElementById('hamburger');
+  const drawer=document.getElementById('navDrawer');
+  let open=false;
+  hamburger.addEventListener('click',()=>{
+    open=!open;drawer.classList.toggle('open',open);
+    const s=hamburger.querySelectorAll('span');
+    if(open){s[0].style.cssText='transform:translateY(6.5px) rotate(45deg)';s[1].style.cssText='opacity:0';s[2].style.cssText='transform:translateY(-6.5px) rotate(-45deg)'}
+    else{s.forEach(x=>x.style.cssText='')}
+  });
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
