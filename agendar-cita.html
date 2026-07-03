@@ -320,7 +320,7 @@
         -->
         <div class="loc-card__map">
           <div class="loc-card__map-icon">🏥</div>
-          <div class="loc-card__map-label">Clínica especializada</div>
+          <div class="loc-card__map-label">Centro de Especialidades Gastrointestinales</div>
           <div class="loc-card__map-name">Digesmed</div>
         </div>
         <div class="loc-card__body">
@@ -343,14 +343,14 @@
         -->
         <div class="loc-card__map">
           <div class="loc-card__map-icon">🏢</div>
-          <div class="loc-card__map-label">Consultorios SaluMed</div>
-          <div class="loc-card__map-name">Edificio Grecia II</div>
+          <div class="loc-card__map-label">Consultorios</div>
+          <div class="loc-card__map-name">SaluMed</div>
         </div>
         <div class="loc-card__body">
-          <div class="loc-card__name">Edificio Grecia II</div>
+          <div class="loc-card__name">Consultorios SaluMed (Edificio Grecia II)</div>
           <div class="loc-card__rows">
             <div class="loc-row"><span class="loc-row__icon">📍</span><span>Quito, Ecuador</span></div>
-            <div class="loc-row"><span class="loc-row__icon">🩺</span><span>Consultorio privado de cirugía general</span></div>
+            <div class="loc-row"><span class="loc-row__icon">🩺</span><span>Consultorio privado de especialidades médicas y cirugía general</span></div>
             <div class="loc-row"><span class="loc-row__icon">🕐</span><span>Lun–Vie 08:00–16:00</span></div>
           </div>
           <a href="https://wa.me/593984966771?text=Hola%20Dr.%20Santiago%2C%20quisiera%20agendar%20en%20el%20Edificio%20Grecia%20II." target="_blank" class="btn btn--wa loc-card__btn">Agendar en Grecia II</a>
@@ -360,6 +360,62 @@
   </div>
 </section>
 
+<!-- Contenedor optimizado para el mapa de tu consultorio -->
+<div class="mapa-consultorio-container">
+  <!-- Reemplaza este iframe por el código exacto que copies desde Google Maps -->
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7905753063545!2d-78.497554!3d-0.190673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc0cbca675f%3A0x55a248767c4f67c1!2sDr.%20Santiago%20Mu%C3%B1oz%20Palomeque%20%7C%20Cirug%C3%ADa%20General%20y%20Laparosc%C3%B3pica!5e0!3m2!1ses!2sec!4v1719958000000!5m2!1ses!2sec" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Estilos para garantizar adaptabilidad en móviles y computadoras -->
+<style>
+  .mapa-consultorio-container {
+    width: 100%;
+    max-width: 900px; /* Evita que el mapa se estire demasiado en pantallas de escritorio */
+    margin: 25px auto; /* Centra el bloque en el cuerpo de tu página web */
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Ajuste de altura exclusivo para pantallas de smartphones */
+  @media (max-width: 600px) {
+    .mapa-consultorio-container iframe {
+      height: 350px; 
+    }
+  }
+</style>
+  
+<!-- Contenedor del calendario -->
+<div class="contenedor-calendario">
+  <iframe src="https://calendar.app.google/BjrAGcKYtVgeCs9x7" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Estilos para asegurar que se vea bien en celulares -->
+<style>
+  .contenedor-calendario {
+    width: 100%;
+    max-width: 900px; /* Ancho máximo en pantallas de escritorio */
+    margin: 0 auto;   /* Centra el calendario en la página */
+    padding: 10px;
+  }
+  
+  /* Ajuste de altura opcional para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .contenedor-calendario iframe {
+      height: 450px; 
+    }
+  }
+</style>
+
+  
+  
 <!-- PROCESS -->
 <section class="section process">
   <div class="wrap">
