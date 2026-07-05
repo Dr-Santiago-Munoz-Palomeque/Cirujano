@@ -111,7 +111,21 @@
     .timeline-content__place{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55)}
 
     
+/* ESTILOS DEL CARRUSEL DE HOSPITALES */
+    .hospitales-section { padding: 80px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
+    .hospitales-container { max-width: 1200px; margin: 0 auto; }
+    .hospitales-title { font-size: 2rem; color: var(--navy, #1a202c); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .hospitales-sub { font-size: 1.15rem; color: var(--text-light, #4a5568); margin-bottom: 48px; font-weight: 500; }
+    .slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 10px 0; }
+    .slider-track { display: flex; width: calc(260px * 16); animation: scrollHospitales 30s linear infinite; }
+    .slide-card { width: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 20px; }
+    .logo-placeholder { height: 65px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .logo-placeholder img { max-height: 55px; max-width: 180px; width: auto; height: auto; object-fit: contain; }
+    .slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #1a202c); }
+    .slider-container:hover .slider-track { animation-play-state: paused; }
+    @keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-260px * 8)); } }
 
+    
 <!-- SECCIÓN HOSPITALES -->
 <section class="hospitales-section">
   <div class="hospitales-container">
