@@ -111,114 +111,19 @@
     .timeline-content__place{font-size:.875rem;font-weight:300;color:rgba(255,255,255,.55)}
 
     
-/* ESTILOS DEL CARRUSEL DE HOSPITALES */
+    /* ESTILOS DEL CARRUSEL DE HOSPITALES */
     .hospitales-section { padding: 80px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
     .hospitales-container { max-width: 1200px; margin: 0 auto; }
-    .hospitales-title { font-size: 2rem; color: var(--navy, #1a202c); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-    .hospitales-sub { font-size: 1.15rem; color: var(--text-light, #4a5568); margin-bottom: 48px; font-weight: 500; }
+    .hospitales-title { font-size: 2rem; color: var(--navy, #0D2240); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .hospitales-sub { font-size: 1.15rem; color: var(--text-light, #8A8898); margin-bottom: 48px; font-weight: 500; }
     .slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 10px 0; }
     .slider-track { display: flex; width: calc(260px * 16); animation: scrollHospitales 30s linear infinite; }
     .slide-card { width: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 20px; }
     .logo-placeholder { height: 65px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
     .logo-placeholder img { max-height: 55px; max-width: 180px; width: auto; height: auto; object-fit: contain; }
-    .slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #1a202c); }
+    .slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #0D2240); }
     .slider-container:hover .slider-track { animation-play-state: paused; }
     @keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-260px * 8)); } }
-
-    
-<!-- SECCIÓN HOSPITALES -->
-<section class="hospitales-section">
-  <div class="hospitales-container">
-    <h2 class="hospitales-title">
-      CIRUGÍA EN LOS MEJORES HOSPITALES DE QUITO
-    </h2>
-    <p class="hospitales-sub">
-      Hospitales en los que opero
-    </p>
-    
-    <!-- Contenedor del Carrusel (Diapositivas infinitas) -->
-    <div class="slider-container">
-      <div class="slider-track">
-        
-        <!-- Hospital 1 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20HMETRO.avif" alt="Hospital Metropolitano">
-          </div>
-          <span>Hospital Metropolitano</span>
-        </div>
-        
-        <!-- Hospital 2 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20LOS%20VALLES.avif" alt="Hospital de los Valles">
-          </div>
-          <span>Hospital de los Valles</span>
-        </div>
-        
-        <!-- Hospital 3 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20AXXIS.png" alt="Hospital Axxis">
-          </div>
-          <span>Hospital Axxis</span>
-        </div>
-        
-        <!-- Hospital 4 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20NOVACLINICA.png" alt="NovaClínica Santa Cecilia">
-          </div>
-          <span>NovaClínica Santa Cecilia</span>
-        </div>
-        
-        <!-- Hospital 5 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20INTEGRAL.avif" alt="Clínica Integral">
-          </div>
-          <span>Clínica Integral</span>
-        </div>
-        
-        <!-- Hospital 6 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20INFES.avif" alt="Clínica Infes">
-          </div>
-          <span>Clínica Infes</span>
-        </div>
-        
-        <!-- Hospital 7 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20CLINICA%20DE%20LA%20MUJER.avif" alt="Clínica de La Mujer">
-          </div>
-          <span>Clínica De La Mujer</span>
-        </div>
-        
-        <!-- Hospital 8 -->
-        <div class="slide-card">
-          <div class="logo-placeholder">
-            <img src="LOGO%20DA%20VINCI.avif" alt="Centro Quirúrgico Da Vinci">
-          </div>
-          <span>Centro Quirúrgico Da Vinci</span>
-        </div>
-
-        <!-- DUPLICADOS (Para el efecto infinito continuo) -->
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20HMETRO.avif" alt="Hospital Metropolitano"></div><span>Hospital Metropolitano</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20LOS%20VALLES.avif" alt="Hospital de los Valles"></div><span>Hospital de los Valles</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20AXXIS.png" alt="Hospital Axxis"></div><span>Hospital Axxis</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20NOVACLINICA.png" alt="NovaClínica Santa Cecilia"></div><span>NovaClínica Santa Cecilia</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20INTEGRAL.avif" alt="Clínica Integral"></div><span>Clínica Integral</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20INFES.avif" alt="Clínica Infes"></div><span>Clínica Infes</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20CLINICA%20DE%20LA%20MUJER.avif" alt="Clínica de La Mujer"></div><span>Clínica De La Mujer</span></div>
-        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20DA%20VINCI.avif" alt="Centro Quirúrgico Da Vinci"></div><span>Centro Quirúrgico Da Vinci</span></div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
     
     /* TEACHING */
     .teaching{background:var(--ivory-dark)}
@@ -482,6 +387,102 @@
   </div>
 </section>
 
+
+  <!-- SECCIÓN HOSPITALES -->
+<section class="hospitales-section">
+  <div class="hospitales-container">
+    <h2 class="hospitales-title">
+      CIRUGÍA EN LOS MEJORES HOSPITALES DE QUITO
+    </h2>
+    <p class="hospitales-sub">
+      Hospitales en los que opero
+    </p>
+    
+    <!-- Contenedor del Carrusel (Diapositivas infinitas) -->
+    <div class="slider-container">
+      <div class="slider-track">
+        
+        <!-- Hospital 1 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20HMETRO.avif" alt="Hospital Metropolitano">
+          </div>
+          <span>Hospital Metropolitano</span>
+        </div>
+        
+        <!-- Hospital 2 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20LOS%20VALLES.avif" alt="Hospital de los Valles">
+          </div>
+          <span>Hospital de los Valles</span>
+        </div>
+        
+        <!-- Hospital 3 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20AXXIS.png" alt="Hospital Axxis">
+          </div>
+          <span>Hospital Axxis</span>
+        </div>
+        
+        <!-- Hospital 4 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20NOVACLINICA.png" alt="NovaClínica Santa Cecilia">
+          </div>
+          <span>NovaClínica Santa Cecilia</span>
+        </div>
+        
+        <!-- Hospital 5 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20INTEGRAL.avif" alt="Clínica Integral">
+          </div>
+          <span>Clínica Integral</span>
+        </div>
+        
+        <!-- Hospital 6 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20INFES.avif" alt="Clínica Infes">
+          </div>
+          <span>Clínica Infes</span>
+        </div>
+        
+        <!-- Hospital 7 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20CLINICA%20DE%20LA%20MUJER.avif" alt="Clínica de La Mujer">
+          </div>
+          <span>Clínica De La Mujer</span>
+        </div>
+        
+        <!-- Hospital 8 -->
+        <div class="slide-card">
+          <div class="logo-placeholder">
+            <img src="LOGO%20DA%20VINCI.avif" alt="Centro Quirúrgico Da Vinci">
+          </div>
+          <span>Centro Quirúrgico Da Vinci</span>
+        </div>
+
+        <!-- DUPLICADOS (Para el efecto infinito continuo) -->
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20HMETRO.avif" alt="Hospital Metropolitano"></div><span>Hospital Metropolitano</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20LOS%20VALLES.avif" alt="Hospital de los Valles"></div><span>Hospital de los Valles</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20AXXIS.png" alt="Hospital Axxis"></div><span>Hospital Axxis</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20NOVACLINICA.png" alt="NovaClínica Santa Cecilia"></div><span>NovaClínica Santa Cecilia</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20INTEGRAL.avif" alt="Clínica Integral"></div><span>Clínica Integral</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20INFES.avif" alt="Clínica Infes"></div><span>Clínica Infes</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20CLINICA%20DE%20LA%20MUJER.avif" alt="Clínica de La Mujer"></div><span>Clínica De La Mujer</span></div>
+        <div class="slide-card"><div class="logo-placeholder"><img src="LOGO%20DA%20VINCI.avif" alt="Centro Quirúrgico Da Vinci"></div><span>Centro Quirúrgico Da Vinci</span></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
 <!-- TEACHING -->
 <section class="section teaching">
   <div class="wrap">
