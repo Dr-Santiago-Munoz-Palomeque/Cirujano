@@ -124,6 +124,34 @@
     .slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #0D2240); }
     .slider-container:hover .slider-track { animation-play-state: paused; }
     @keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-260px * 8)); } }
+
+
+    /* ESTILOS DEL CARRUSEL DE HOSPITALES (MODIFICADO PARA IMÁGENES MÁS GRANDES) */
+.hospitales-section { padding: 80px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
+.hospitales-container { max-width: 1200px; margin: 0 auto; }
+.hospitales-title { font-size: 2rem; color: var(--navy, #0D2240); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.hospitales-sub { font-size: 1.15rem; color: var(--text-light, #8A8898); margin-bottom: 48px; font-weight: 500; }
+.slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 10px 0; }
+
+/* 1. Cambiamos el ancho base en el cálculo del track (de 260px a 320px) */
+.slider-track { display: flex; width: calc(320px * 16); animation: scrollHospitales 40s linear infinite; }
+
+/* 2. Ampliamos el ancho de cada tarjeta individual (de 260px a 320px) */
+.slide-card { width: 320px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 20px; }
+
+/* 3. Aumentamos la altura del contenedor del logo (de 65px a 100px) */
+.logo-placeholder { height: 100px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+
+/* 4. Incrementamos los límites de tamaño máximo del logo */
+.logo-placeholder img { max-height: 90px; max-width: 260px; width: auto; height: auto; object-fit: contain; }
+
+.slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #0D2240); }
+.slider-container:hover .slider-track { animation-play-state: paused; }
+
+/* 5. Ajustamos la animación con la nueva medida (de -260px a -320px) */
+@keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-320px * 8)); } }
+
+
     
     /* TEACHING */
     .teaching{background:var(--ivory-dark)}
