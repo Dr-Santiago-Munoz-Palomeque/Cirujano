@@ -112,44 +112,30 @@
 
     
     /* ESTILOS DEL CARRUSEL DE HOSPITALES */
-    .hospitales-section { padding: 80px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
-    .hospitales-container { max-width: 1200px; margin: 0 auto; }
-    .hospitales-title { font-size: 2rem; color: var(--navy, #0D2240); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
-    .hospitales-sub { font-size: 1.15rem; color: var(--text-light, #8A8898); margin-bottom: 48px; font-weight: 500; }
-    .slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 10px 0; }
-    .slider-track { display: flex; width: calc(260px * 16); animation: scrollHospitales 40s linear infinite; }
-    .slide-card { width: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 20px; }
-    .logo-placeholder { height: 65px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
-    .logo-placeholder img { max-height: 55px; max-width: 180px; width: auto; height: auto; object-fit: contain; }
-    .slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #0D2240); }
-    .slider-container:hover .slider-track { animation-play-state: paused; }
-    @keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-260px * 8)); } }
-
-
-    /* ESTILOS DEL CARRUSEL DE HOSPITALES (MODIFICADO PARA IMÁGENES MÁS GRANDES) */
-.hospitales-section { padding: 80px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
-.hospitales-container { max-width: 1200px; margin: 0 auto; }
+/* ESTILOS DEL CARRUSEL DE HOSPITALES (VERSIÓN EXTRA GRANDE) */
+.hospitales-section { padding: 90px 20px; background-color: var(--white, #ffffff); text-align: center; overflow: hidden; }
+.hospitales-container { max-width: 1400px; margin: 0 auto; }
 .hospitales-title { font-size: 2rem; color: var(--navy, #0D2240); margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 .hospitales-sub { font-size: 1.15rem; color: var(--text-light, #8A8898); margin-bottom: 48px; font-weight: 500; }
-.slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 10px 0; }
+.slider-container { overflow: hidden; position: relative; width: 100%; display: flex; align-items: center; padding: 20px 0; }
 
-/* 1. Cambiamos el ancho base en el cálculo del track (de 260px a 320px) */
-.slider-track { display: flex; width: calc(320px * 16); animation: scrollHospitales 40s linear infinite; }
+/* 1. Ajustamos el ancho total del track (400px por tarjeta) */
+.slider-track { display: flex; width: calc(400px * 16); animation: scrollHospitales 45s linear infinite; }
 
-/* 2. Ampliamos el ancho de cada tarjeta individual (de 260px a 320px) */
-.slide-card { width: 320px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 20px; }
+/* 2. Hacemos la tarjeta mucho más ancha */
+.slide-card { width: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; padding: 0 25px; }
 
-/* 3. Aumentamos la altura del contenedor del logo (de 65px a 100px) */
-.logo-placeholder { height: 100px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+/* 3. Le damos más altura al contenedor del logo (150px) */
+.logo-placeholder { height: 150px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
 
-/* 4. Incrementamos los límites de tamaño máximo del logo */
-.logo-placeholder img { max-height: 90px; max-width: 260px; width: auto; height: auto; object-fit: contain; }
+/* 4. Subimos el tamaño máximo permitido para la imagen del logo */
+.logo-placeholder img { max-height: 140px; max-width: 340px; width: auto; height: auto; object-fit: contain; }
 
-.slide-card span { font-size: 0.95rem; font-weight: 600; color: var(--navy, #0D2240); }
+.slide-card span { font-size: 1rem; font-weight: 600; color: var(--navy, #0D2240); }
 .slider-container:hover .slider-track { animation-play-state: paused; }
 
-/* 5. Ajustamos la animación con la nueva medida (de -260px a -320px) */
-@keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-320px * 8)); } }
+/* 5. Sincronizamos la animación con los nuevos 400px */
+@keyframes scrollHospitales { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-400px * 8)); } }
 
 
     
@@ -419,21 +405,12 @@
 <!-- SECCIÓN HOSPITALES -->
 <section class="hospitales-section">
   <div class="hospitales-container">
-
     <p class="hospitales-sub">
-      Hospitales en los que opero
+      CIRUGÍA EN LOS MEJORES HOSPITALES DE QUITO
     </p>
     <h2 class="hospitales-title">
-      CIRUGÍA EN LOS MEJORES HOSPITALES DE QUITO
+      Hospitales en los que opero
     </h2>
-
-
-    ******
-    <div class="certs__header reveal">
-      <span class="eyebrow eyebrow--navy" style="display:block;margin-bottom:16px;">CIRUGÍA EN LOS MEJORES HOSPITALES DE QUITO</span>
-      <h2 style="color:var(--navy);">Hospitales en los que opero</h2>
-    </div>
-
     
     <!-- Contenedor del Carrusel (Diapositivas infinitas) -->
     <div class="slider-container">
