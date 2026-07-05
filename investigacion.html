@@ -111,16 +111,40 @@
     .pub-item__title{font-size:.9375rem;font-weight:500;color:var(--text);line-height:1.6}
     .pub-item__meta{font-size:.8125rem;font-weight:300;color:var(--text-light);margin-top:4px}
 
-    /* PROFILES */
+
+
+
+/* PROFILES */
     .profiles{background:var(--ivory-dark);padding:72px 0}
     .profiles__header{text-align:center;margin-bottom:48px}
-    .profiles__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:450px;margin:0 auto}
+    .profiles__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
     .profile-card{background:var(--white);border-radius:var(--r-xl);border:1px solid var(--stone);padding:36px;text-align:center;box-shadow:var(--shadow-sm)}
-    .profile-card__icon{font-size:2.5rem;margin-bottom:16px}
+    
+    /* MODIFICADO: Contenedor del icono más pequeño y centrado */
+    .profile-card__icon{
+      width: 36px;          /* Define un ancho pequeño (puedes probar con 32px o 40px si prefieres) */
+      height: 36px;         /* Define un alto igual para que sea simétrico */
+      margin: 0 auto 16px;  /* Centra el contenedor horizontalmente y mantiene el margen inferior */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* NUEVO: Controla directamente el tamaño de la imagen del logo */
+    .profile-card__icon img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;  /* Evita que los logos se deformen */
+    }
+
     .profile-card__name{font-family:'Playfair Display',serif;font-size:1.1875rem;font-weight:700;color:var(--navy);margin-bottom:8px}
     .profile-card__desc{font-size:.875rem;font-weight:300;color:var(--text-light);line-height:1.65;margin-bottom:24px}
     .profile-card__link{display:inline-flex;align-items:center;gap:7px;font-size:.875rem;font-weight:600;color:var(--gold)}
 
+
+
+    
+  
     /* CTA */
     .cta-section{background:var(--navy);padding:88px 0}
     .cta-section__inner{text-align:center}
