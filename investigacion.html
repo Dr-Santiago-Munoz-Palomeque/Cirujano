@@ -119,24 +119,21 @@
     .profiles__header{text-align:center;margin-bottom:48px}
     .profiles__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:800px;margin:0 auto}
     .profile-card{background:var(--white);border-radius:var(--r-xl);border:1px solid var(--stone);padding:36px;text-align:center;box-shadow:var(--shadow-sm)}
-    
-    /* MODIFICADO: Contenedor del icono más pequeño y centrado */
+        /* MODIFICADO: Contenedor del icono más pequeño y centrado */
     .profile-card__icon{
-      width: 36px;          /* Define un ancho pequeño (puedes probar con 32px o 40px si prefieres) */
-      height: 36px;         /* Define un alto igual para que sea simétrico */
+      width: 80px;          /* Define un ancho pequeño (puedes probar con 32px o 40px si prefieres) */
+      height: 80px;         /* Define un alto igual para que sea simétrico */
       margin: 0 auto 16px;  /* Centra el contenedor horizontalmente y mantiene el margen inferior */
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
     /* NUEVO: Controla directamente el tamaño de la imagen del logo */
     .profile-card__icon img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;  /* Evita que los logos se deformen */
     }
-
     .profile-card__name{font-family:'Playfair Display',serif;font-size:1.1875rem;font-weight:700;color:var(--navy);margin-bottom:8px}
     .profile-card__desc{font-size:.875rem;font-weight:300;color:var(--text-light);line-height:1.65;margin-bottom:24px}
     .profile-card__link{display:inline-flex;align-items:center;gap:7px;font-size:.875rem;font-weight:600;color:var(--gold)}
@@ -415,7 +412,6 @@
         <div class="profile-card__icon">
           <img src="logo ocrid.webp" alt="Logo de ORCiD">
         </div>
-        <div class="profile-card__icon">🔖</div>
         <div class="profile-card__name">ORCiD</div>
         <p class="profile-card__desc">Identificador único y persistente que vincula todas las contribuciones científicas del Dr. Muñoz Palomeque a lo largo de su carrera investigadora.</p>
         <!-- Cambiado de <span> a <a> con tu link -->
@@ -427,7 +423,6 @@
         <div class="profile-card__icon">
           <img src="logo researchgate.webp" alt="Logo de ResearchGate">
         </div>
-        <div class="profile-card__icon">🔬</div>
         <div class="profile-card__name">ResearchGate</div>
         <p class="profile-card__desc">Red científica donde están disponibles las publicaciones, colaboraciones y contribuciones académicas en el campo de la cirugía.</p>
         <!-- Cambiado de <span> a <a> con tu link -->
