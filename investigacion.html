@@ -186,6 +186,66 @@
       .footer__main{grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
       .footer__bottom{flex-direction:column;text-align:center}
     }
+
+
+    /* NUEVOS ESTILOS PARA ACOMODAR LA IMAGEN A LA DERECHA */
+    .page-hero__grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr; /* Divide el espacio: más para texto, menos para foto */
+      gap: 48px;
+      align-items: center;
+    }
+    .hero__right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hero__photo-placeholder {
+      width: 100%;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+    }
+    .hero__photo-placeholder img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    /* Estilos para la tarjeta flotante de dirección */
+    .photo-brief__card {
+      background: var(--white);
+      padding: 16px;
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--stone);
+    }
+    .photo-brief__label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .photo-brief__title {
+      font-size: 0.85rem;
+      color: var(--text);
+      margin: 4px 0;
+    }
+    .photo-brief__sub {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* Adaptación para pantallas móviles (Responsive) */
+    @media(max-width: 968px) {
+      .page-hero__grid {
+        grid-template-columns: 1fr; /* Se apila uno abajo del otro en celulares */
+        gap: 40px;
+      }
+    }
+    
   </style>
 </head>
 <body>
@@ -274,7 +334,56 @@
   </section>
 
 
-  
+  ------------------------------------------
+
+
+  <!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero__grid">
+      
+      <!-- LEFT: text column -->
+      <div class="page-hero__inner">
+        <div class="page-hero__eyebrow"><span class="eyebrow eyebrow--gold">Investigación científica</span></div>
+        <h1 class="page-hero__title">Cada técnica que aplico<br>viene de investigación que ha sido <em> científicamente respaldada y confirmada, </em> y que <em>también publico.</em></h1>
+        <p class="page-hero__sub">A través de publicaciones científicas internacionales, el Dr. Muñoz Palomeque estudia y aplica las técnicas más avanzadas en cirugía, con el objetivo de ofrecer tratamientos más seguros y efectivos.</p>
+        <div class="page-hero__stats">
+          <div class="stat-pill">
+            <div class="stat-pill__num">+25</div>
+            <div class="stat-pill__label">Publicaciones internacionales</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill__num">4</div>
+            <div class="stat-pill__label">Líneas de investigación activa</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill__num">13</div>
+            <div class="stat-pill__label">Ponencias en congresos científicos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: photo column (AHORA DENTRO DEL WRAP) -->
+      <div class="hero__right">
+        <div class="hero__photo-placeholder">
+          <img src="Santiago Muñoz Palomeque Cirujano.avif" alt="Foto del Dr. Santiago Muñoz Palomeque">
+        </div>
+
+        <!-- Badge de ubicación -->
+        <div class="photo-brief">
+          <div class="photo-brief__card">
+            <div class="photo-brief__label">Dr. Santiago Muñoz Palomeque</div>
+            <div class="photo-brief__title">Digesmed (Edificio CITIMED) · SaluMed (Edificio Grecia II)</div>
+            <div class="photo-brief__sub">Quito, Ecuador · Lun–Vie 08:00–16:00</div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /page-hero__grid -->
+  </div> <!-- /wrap -->
+</section>
+
+  -----------------------------------------------------
 
 <!-- PATIENT BENEFITS -->
 <section class="section benefits">
